@@ -3,19 +3,33 @@ package com.dotin.timeOffRequest.data;
 import javax.persistence.*;
 
 @Entity
-public class EmployeeTO {
-
-    private Long id;
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
-    private String address;
-    private String emailAddress;
-    private CategoryElementTO role;
-    private EmployeeTO manager;
-
+@Table(name = "t_employee")
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "c_id")
+    private Long id;
+    @Column(name = "c_firstName")
+    private String firstName;
+    @Column(name = "c_lastName")
+    private String lastName;
+    @Column(name = "c_phoneNumber")
+    private String phoneNumber;
+    @Column(name = "c_address")
+    private String address;
+    @Column(name = "c_emailAddress")
+    private String emailAddress;
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElement.class, optional = false)
+    @JoinColumn(name = "c_role")
+    private CategoryElement role;
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Employee.class)
+    @JoinColumn(name = "c_manager")
+    private Employee manager;
+    @Column(name = "c_active")
+    private Boolean active = true;
+    @Column(name = "c_deleted")
+    private Boolean deleted = true;
+
     public Long getId() {
         return id;
     }
@@ -64,25 +78,35 @@ public class EmployeeTO {
         this.emailAddress = emailAddress;
     }
 
-
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElementTO.class, optional = false)
-    @JoinColumn(name = "id")
-    public CategoryElementTO getRole() {
+    public CategoryElement getRole() {
         return role;
     }
 
-    public void setRole(CategoryElementTO categoryElement) {
-        this.role = categoryElement;
+    public void setRole(CategoryElement role) {
+        this.role = role;
     }
 
-
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = EmployeeTO.class)
-    @JoinColumn(name = "id")
-    public EmployeeTO getManager() {
+    public Employee getManager() {
         return manager;
     }
 
-    public void setManager(EmployeeTO manager) {
+    public void setManager(Employee manager) {
         this.manager = manager;
+    }
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
+    public Boolean getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
     }
 }
