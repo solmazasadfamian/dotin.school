@@ -23,7 +23,6 @@ public class Email {
     @Column(name = "c_deleted")
     private Boolean deleted = true;
     @Column(name = "c_attachFilePath")
-    private String attachFilePath;
     @ManyToMany
     @JoinTable(
             name = "t_emailReceiver",
@@ -77,14 +76,6 @@ public class Email {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
-    }
-
-    public String getAttachFilePath() {
-        return attachFilePath;
-    }
-
-    public void setAttachFilePath(String attachFilePath) {
-        this.attachFilePath = attachFilePath;
     }
 
     public Set<Employee> getReceiver() {
