@@ -1,0 +1,14 @@
+
+c
+java:S1192""HDefine a constant instead of duplicating this literal "changed" 3 times.(Á¹àÐýÿÿÿÿ
+X
+java:S2259_"BA "NullPointerException" could be thrown; "conn" is nullable here.(¾ø¦Ä
+^
+java:S2259m"CA "NullPointerException" could be thrown; "pstmt" is nullable here.(üÒ‡¿ÿÿÿÿÿ
+R
+java:S2440("7Remove this instantiation of "RunTrainModelIG1Curated".(Š¬ˆíøÿÿÿÿ
+P
+java:S2209)"5Change this instance-reference to a static reference.( ¸Ï¥ûÿÿÿÿ
+Q	java:S125G"<This block of commented-out lines of code should be removed.(äüÌ
+Q	java:S125c"<This block of commented-out lines of code should be removed.(‘ðÒð
+N	java:S106i"9Replace this use of System.out or System.err by a logger.(˜ŸÚá

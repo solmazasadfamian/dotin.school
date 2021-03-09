@@ -1,0 +1,17 @@
+com\dotin\timeOffRequest\dao\GenericDaoImpl.class
+com\dotin\timeOffRequest\controller\EmployeeController.class
+com\dotin\timeOffRequest\entity\Email.class
+com\dotin\timeOffRequest\entity\Employee.class
+com\dotin\timeOffRequest\service\CategoryElementService.class
+com\dotin\timeOffRequest\dao\CategoryElementDao.class
+com\dotin\timeOffRequest\dao\EmployeeDao.class
+com\dotin\timeOffRequest\dao\GenericDao.class
+com\dotin\timeOffRequest\dao\TimeOffRequestDao.class
+com\dotin\timeOffRequest\dao\CategoryDao.class
+com\dotin\timeOffRequest\entity\Attachment.class
+com\dotin\timeOffRequest\dao\EmailDao.class
+com\dotin\timeOffRequest\entity\Category.class
+com\dotin\timeOffRequest\entity\TimeOffRequest.class
+com\dotin\timeOffRequest\dao\AttachmentDao.class
+com\dotin\timeOffRequest\service\EmployeeService.class
+com\dotin\timeOffRequest\entity\CategoryElement.class

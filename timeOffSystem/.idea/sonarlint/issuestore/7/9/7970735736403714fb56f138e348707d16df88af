@@ -1,0 +1,42 @@
+
+^
+java:S2095'"HUse try-with-resources or close this "Connection" in a "finally" clause.(Ã§ÅĞ
+]
+java:S2095."GUse try-with-resources or close this "Statement" in a "finally" clause.(˜ğ×
+b
+java:S1192>"GDefine a constant instead of duplicating this literal "status" 3 times.(’İ›Úûÿÿÿÿ
+W
+java:S2259\"AA "NullPointerException" could be thrown; "fis" is nullable here.(×¦İ”
+_
+java:S2259G"DA "NullPointerException" could be thrown; "status" is nullable here.(˜º…’ÿÿÿÿÿ
+P
+java:S1128":Remove this unused import 'org.apache.commons.io.IOUtils'.(Ì–’
+A
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü
+W
+java:S1128"ARemove this unused import 'com.fpi.validation.NetworkValidation'.(°Õ©Ö
+k
+java:S1128"PRemove this unused import 'com.fpi.servlet.networkValidation.FileUploadHandler'.(ˆ™¯øÿÿÿÿ
+R
+java:S1128"<Remove this unused import 'org.apache.commons.io.FileUtils'.(À¿Ù´
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(İíßÜ
+S
+java:S1854<"=Remove this useless assignment to local variable "firstName".(äÃÏ¼
+U
+java:S1161":Add the "@Override" annotation above this method signature(Ïû©Öûÿÿÿÿ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(ê­ºŞ
+l
+java:S1989Y"VHandle the following exception that could be thrown by "getOutputStream": IOException.(òËşó
+a
+java:S1989\"KHandle the following exception that could be thrown by "read": IOException.(×¦İ”
+b
+java:S1989]"LHandle the following exception that could be thrown by "write": IOException.(²Ë¾Ğ
+g
+java:S1989_"LHandle the following exception that could be thrown by "flush": IOException.(„¨‡Òûÿÿÿÿ
+b
+java:S1989`"LHandle the following exception that could be thrown by "close": IOException.(œñÑ
+g
+java:S1989a"LHandle the following exception that could be thrown by "close": IOException.(ß¶­†ÿÿÿÿÿ
+D
+java:S1481<".Remove this unused "firstName" local variable.(äÃÏ¼

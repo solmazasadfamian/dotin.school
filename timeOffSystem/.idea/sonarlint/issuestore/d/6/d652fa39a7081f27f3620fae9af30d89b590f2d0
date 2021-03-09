@@ -1,0 +1,139 @@
+
+g
+java:S1192)"RDefine a constant instead of duplicating this literal "resultTrainModel" 51 times.(ê‘œC
+l	java:S117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÕ€Œşÿÿÿÿ
+¶
+java:S1192ì"™Define a constant instead of duplicating this literal "\nthe feature added is :  Directed  +  wieghted + deleted self loop + delete duplicated " 3 times.(ÙÂÊ·ıÿÿÿÿ
+z
+java:S1192Á"^Define a constant instead of duplicating this literal "the number of Edges        : " 3 times.(±ÁÅúÿÿÿÿ
+l	java:S117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıŸõŠøÿÿÿÿ
+X	java:S125"<This block of commented-out lines of code should be removed.(Å®¼8õ™Ë×æ.
+R
+java:S2696Ğ"6Make the enclosing method "static" or remove this set.(øÒÀâûÿÿÿÿ
+R
+java:S2696Ñ"6Make the enclosing method "static" or remove this set.(Ùı’¶ùÿÿÿÿ
+g	java:S117”"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ®äÚ
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(¼¾¼Åøÿÿÿÿ
+s
+java:S1192ë"WDefine a constant instead of duplicating this literal "\nself loop is deleted" 3 times.(ùÄœÏøÿÿÿÿ
+w
+java:S1192ö"YDefine a constant instead of duplicating this literal "trueNegativeStandard.txt" 5 times.(ü€ı‘8Ÿ·Ì×æ.
+|
+java:S1192À"^Define a constant instead of duplicating this literal "the number of Vertices     : " 3 times.(Á§ÃÙ8Ÿ·Ì×æ.
+j
+java:S1192*"MDefine a constant instead of duplicating this literal "preparation" 47 times.(ÇÎœ8Ÿ·Ì×æ.
+‚
+java:S1192¾"dDefine a constant instead of duplicating this literal "Number of edges must be nonnegative" 6 times.(é£õÒ8Ÿ·Ì×æ.
+
+java:S1192Ù"^Define a constant instead of duplicating this literal "number of graph components : " 3 times.(³œ³ ıÿÿÿÿ8Ÿ·Ì×æ.
+‚
+java:S1192Ü"dDefine a constant instead of duplicating this literal "\ncomponent of this graph is ... \n" 3 times.(¦øôƒ8Ÿ·Ì×æ.
+u
+java:S1192"WDefine a constant instead of duplicating this literal "TrainModelStandard.txt" 5 times.(Ê¯ÖÑ8Ÿ·Ì×æ.
+‹
+java:S1192¯"mDefine a constant instead of duplicating this literal "number of true_positive interaction       : " 3 times.(–½ß¿8Ÿ·Ì×æ.
+
+java:S1192¬"^Define a constant instead of duplicating this literal "number of self loops       : " 3 times.(©Ø˜³øÿÿÿÿ8Ÿ·Ì×æ.
+|
+java:S1192ª"^Define a constant instead of duplicating this literal "average degree             : " 3 times.(¬¦¢Á8Ÿ·Ì×æ.
+|
+java:S1192ß"YDefine a constant instead of duplicating this literal "truePositiveStandard.txt" 5 times.(„İ™Ñùÿÿÿÿ8Ÿ·Ì×æ.
+ª
+java:S1192ê"‹Define a constant instead of duplicating this literal "\n\nthe wieghted directed graph equivalent this graph is in curated graph " 3 times.(åÇèÃ8Ÿ·Ì×æ.
+j
+java:S1192#"HDefine a constant instead of duplicating this literal "uploads" 7 times.(âşÿûşÿÿÿÿ8Ÿ·Ì×æ.
+
+java:S1192¨"^Define a constant instead of duplicating this literal "vertex of maximum degree   : " 3 times.(’Ÿªùÿÿÿÿ8Ÿ·Ì×æ.
+s	java:S117²"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ëÇéûÿÿÿÿ8Ÿ·Ì×æ.
+n	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çš©ñ8Ÿ·Ì×æ.
+s	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ëÇéûÿÿÿÿ8Ÿ·Ì×æ.
+n	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çš©ñ8Ÿ·Ì×æ.
+s	java:S117Ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ëÇéûÿÿÿÿ8Ÿ·Ì×æ.
+n	java:S117Ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çš©ñ8Ÿ·Ì×æ.
+n	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡î²Õ8Ÿ·Ì×æ.
+n	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡î²Õ8Ÿ·Ì×æ.
+n	java:S117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÖÖ8Ÿ·Ì×æ.
+n	java:S117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÖÖ8Ÿ·Ì×æ.
+n	java:S117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¤ÛÉ8Ÿ·Ì×æ.
+n	java:S117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¤ÛÉ8Ÿ·Ì×æ.
+n	java:S117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ø‘8Ÿ·Ì×æ.
+n	java:S117Ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ø‘8Ÿ·Ì×æ.
+s	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËĞ²Ûûÿÿÿÿ8Ÿ·Ì×æ.
+s	java:S117ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËĞ²Ûûÿÿÿÿ8Ÿ·Ì×æ.
+n	java:S117õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìì†8Ÿ·Ì×æ.
+n	java:S117õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìì†8Ÿ·Ì×æ.
+s	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ò¨îúÿÿÿÿ8Ÿ·Ì×æ.
+s	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÓè‡ùÿÿÿÿ8Ÿ·Ì×æ.
+n	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô‘û’8Ÿ·Ì×æ.
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¯¥8Ÿ·Ì×æ.
+U
+java:S1854Ë"7Remove this useless assignment to local variable "max".(İ®ú¹8Ÿ·Ì×æ.
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(â¯¥8Ÿ·Ì×æ.
+J	java:S108@")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(Ø¹ÜÆùÿÿÿÿ8Ÿ·Ì×æ.
+J	java:S108W")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+J	java:S108m")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(»îäâüÿÿÿÿ8Ÿ·Ì×æ.
+K	java:S108‹")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+Y
+java:S2696"6Make the enclosing method "static" or remove this set.(ö½Ó®ÿÿÿÿÿ8Ÿ·Ì×æ.
+V	java:S106’"9Replace this use of System.out or System.err by a logger.(­í—˜8Ÿ·Ì×æ.
+[	java:S106 "9Replace this use of System.out or System.err by a logger.(»îäâüÿÿÿÿ8Ÿ·Ì×æ.
+K	java:S108©")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+S
+java:S2696­"6Make the enclosing method "static" or remove this set.(¦³šT8Ÿ·Ì×æ.
+V	java:S106¯"9Replace this use of System.out or System.err by a logger.(Í›ñÍ8Ÿ·Ì×æ.
+[	java:S106¾"9Replace this use of System.out or System.err by a logger.(»îäâüÿÿÿÿ8Ÿ·Ì×æ.
+K	java:S108Ç")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+Y
+java:S2696Ê"6Make the enclosing method "static" or remove this set.(•²ÎĞşÿÿÿÿ8Ÿ·Ì×æ.
+V	java:S106Í"9Replace this use of System.out or System.err by a logger.(ÈÇå8Ÿ·Ì×æ.
+Y
+java:S2696Ï"6Make the enclosing method "static" or remove this set.(¬÷ÖŸüÿÿÿÿ8Ÿ·Ì×æ.
+p	java:S100Ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ÿ‰€ùÿÿÿÿ8Ÿ·Ì×æ.
+[	java:S106ê"9Replace this use of System.out or System.err by a logger.(å‡ëÇøÿÿÿÿ8Ÿ·Ì×æ.
+K	java:S108í")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(å‡ëÇøÿÿÿÿ8Ÿ·Ì×æ.
+K	java:S108„")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+[	java:S106˜"9Replace this use of System.out or System.err by a logger.(å‡ëÇøÿÿÿÿ8Ÿ·Ì×æ.
+K	java:S108›")Either remove or fill this block of code.(‰ÜÏÂüÿÿÿÿ8Ÿ·Ì×æ.
+k	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê‘©¹8Ÿ·Ì×æ.
+p
+java:S3776 "RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ê‘©¹8Ÿ·Ì×æ.
+K	java:S108Ò")Either remove or fill this block of code.(³÷Ö¶øÿÿÿÿ8Ÿ·Ì×æ.
+k	java:S100ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÄÆ„8Ÿ·Ì×æ.
+p
+java:S3776ò"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ıÄÆ„8Ÿ·Ì×æ.
+K	java:S108¤")Either remove or fill this block of code.(³÷Ö¶øÿÿÿÿ8Ÿ·Ì×æ.
+p	java:S100Ä"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÃêûÿÿÿÿ8Ÿ·Ì×æ.
+u
+java:S3776Ä"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ÇÃêûÿÿÿÿ8Ÿ·Ì×æ.
+K	java:S108ö")Either remove or fill this block of code.(³÷Ö¶øÿÿÿÿ8Ÿ·Ì×æ.
+k	java:S100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡î²Õ8Ÿ·Ì×æ.
+k	java:S100«"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÖÖ8Ÿ·Ì×æ.
+k	java:S100À"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¤ÛÉ8Ÿ·Ì×æ.
+k	java:S100Ó"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ø‘8Ÿ·Ì×æ.
+p	java:S100ä"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËĞ²Ûûÿÿÿÿ8Ÿ·Ì×æ.
+k	java:S100õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìì†8Ÿ·Ì×æ.
+D
+java:S1172ˆ"&Remove these unused method parameters.(ÁŞ•Ä8Ÿ·Ì×æ.
+c
+java:S1854"ERemove this useless assignment to local variable "graphTruePositive".(Ÿºúå8Ÿ·Ì×æ.
+c
+java:S1854Ç"ERemove this useless assignment to local variable "graphTrueNegative".(‰›ú8Ÿ·Ì×æ.
+a
+java:S1854ş"CRemove this useless assignment to local variable "graphTrainModel".(Üùÿ8Ÿ·Ì×æ.
+[	java:S106¶"9Replace this use of System.out or System.err by a logger.(À–Ôúıÿÿÿÿ8Ÿ·Ì×æ.
+D
+java:S1481Ñ"&Remove this unused "v" local variable.(“‘Ï–8Ÿ·Ì×æ.
+D
+java:S1481£"&Remove this unused "v" local variable.(“‘Ï–8Ÿ·Ì×æ.
+D
+java:S1481õ"&Remove this unused "v" local variable.(“‘Ï–8Ÿ·Ì×æ.
+T
+java:S1481"6Remove this unused "graphTruePositive" local variable.(Ÿºúå8Ÿ·Ì×æ.
+T
+java:S1481Ç"6Remove this unused "graphTrueNegative" local variable.(‰›ú8Ÿ·Ì×æ.
+R
+java:S1481ş"4Remove this unused "graphTrainModel" local variable.(Üùÿ8Ÿ·Ì×æ.

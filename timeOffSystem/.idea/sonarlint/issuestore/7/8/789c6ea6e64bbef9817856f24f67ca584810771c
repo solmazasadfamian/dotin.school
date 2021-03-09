@@ -1,0 +1,12 @@
+
+c
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ùðÞ†ýÿÿÿÿ
+h
+java:S2095$"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ÓÐÊýþÿÿÿÿ
+X
+java:S2259""BA "NullPointerException" could be thrown; "conn" is nullable here.(¾ø¦Ä
+^
+java:S22590"CA "NullPointerException" could be thrown; "pstmt" is nullable here.(üÒ‡¿ÿÿÿÿÿ
+<
+java:S1172"&Remove these unused method parameters.(‡§Ìœ
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(˜ŸÚá

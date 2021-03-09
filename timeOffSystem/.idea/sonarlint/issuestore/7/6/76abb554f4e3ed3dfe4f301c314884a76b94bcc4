@@ -1,0 +1,12 @@
+
+X
+java:S2259,"BA "NullPointerException" could be thrown; "conn" is nullable here.(¾ø¦Ä
+^
+java:S2259:"CA "NullPointerException" could be thrown; "pstmt" is nullable here.(üÒ‡¿ÿÿÿÿÿ
+V
+java:S3416";Update this logger to use "SaveTrainModelResultInDB.class".(ß€¶Õøÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ß€¶Õøÿÿÿÿ
+<
+java:S1172"&Remove these unused method parameters.(‡§Ìœ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(˜ŸÚá

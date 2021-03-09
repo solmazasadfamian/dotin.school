@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9cf2f92a-7909-48d1-a3bc-25d76406b698" name="Default" comment="" />
+    <ignored path="Eprescription.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/JavaAPIMain.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436092044819" ignored="false" />
+    <file path="/Dummy.txt" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437565040641" ignored="false" />
+    <file path="F:/untitled/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435068707670" ignored="false" />
+    <file path="$USER_HOME$/Desktop/sampleapplication/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435069230736" ignored="false" />
+    <file path="$USER_HOME$/Desktop/test/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435118837257" ignored="false" />
+    <file path="/fragment.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443697467255" ignored="false" />
+    <file path="/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438287211585" ignored="false" />
+    <file path="$USER_HOME$/Desktop/test/src/main/java/HelloCrunchify.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435122905373" ignored="false" />
+    <file path="$USER_HOME$/Desktop/untitled1/src/Salam.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435126201823" ignored="false" />
+    <file path="/Salam.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435126201412" ignored="false" />
+    <file path="$USER_HOME$/Desktop/untitled1/src/ReadParams.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435128105599" ignored="false" />
+    <file path="$USER_HOME$/Desktop/untitled1/web/WEB-INF/web.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435126416030" ignored="false" />
+    <file path="$USER_HOME$/Desktop/untitled1/web/index.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435127343491" ignored="false" />
+    <file path="/web.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443182947495" ignored="false" />
+    <file path="/ReadParams.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435128105599" ignored="false" />
+    <file path="/index.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436096287052" ignored="false" />
+    <file path="$USER_HOME$/Desktop/untitled1/web/response.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435128125921" ignored="false" />
+    <file path="/response.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435398664589" ignored="false" />
+    <file path="/a.dummy" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441479458228" ignored="false" />
+    <file path="/request.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436097644944" ignored="false" />
+    <file path="/content-header-responsive.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435567762881" ignored="false" />
+    <file path="/content-header.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439469497452" ignored="false" />
+    <file path="/content-footer.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437469561069" ignored="false" />
+    <file path="/test.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439022754031" ignored="false" />
+    <file path="/dashboard.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439464474996" ignored="false" />
+    <file path="/test2.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438177898505" ignored="false" />
+    <file path="/search.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443698443783" ignored="false" />
+    <file path="/test33.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435669866134" ignored="false" />
+    <file path="/test4.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435661217871" ignored="false" />
+    <file path="/test5.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435662950198" ignored="false" />
+    <file path="/dataTable.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436072651406" ignored="false" />
+    <file path="$PROJECT_DIR$/../../elastic_doc/sample/spring-boot-sample-web-jsp/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435758707656" ignored="false" />
+    <file path="F:/programing/java-plugin/apache-maven-3.0.4/conf/settings.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1435759015691" ignored="false" />
+    <file path="$USER_HOME$/Desktop/java-servlet-json/src/main/webapp/WEB-INF/web.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436074598984" ignored="false" />
+    <file path="$USER_HOME$/Desktop/java-servlet-json/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436075306093" ignored="false" />
+    <file path="$USER_HOME$/Desktop/jQuery-AJAX-Web-Application/src/main/java/com/journaldev/servlets/GetUserServlet.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436095569165" ignored="false" />
+    <file path="$USER_HOME$/Desktop/jQuery-AJAX-Web-Application/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436089502981" ignored="false" />
+    <file path="$USER_HOME$/Desktop/jQuery-AJAX-Web-Application/WebContent/index.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436096288323" ignored="false" />
+    <file path="/GetUserServlet.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436095568182" ignored="false" />
+    <file path="/PatientInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443361942556" ignored="false" />
+    <file path="/font_type.css" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437562533690" ignored="false" />
+    <file path="/testLast.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436166055298" ignored="false" />
+    <file path="/detail.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443700672542" ignored="false" />
+    <file path="/Detail.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436248581478" ignored="false" />
+    <file path="/test8.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436260000356" ignored="false" />
+    <file path="/a.txt" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436357913833" ignored="false" />
+    <file path="/bootstrap.min.css" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439461648462" ignored="false" />
+    <file path="/content-header-sho.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436675876262" ignored="false" />
+    <file path="/header-test.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436679967129" ignored="false" />
+    <file path="/test.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439669139766" ignored="false" />
+    <file path="/content-header-last.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436684010264" ignored="false" />
+    <file path="$USER_HOME$/Desktop/FPIDetector/src/main/java/preparation/Preparation_Run.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436762959052" ignored="false" />
+    <file path="/Preparation_Run.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438319228686" ignored="false" />
+    <file path="$USER_HOME$/Desktop/FPIDetector/src/main/java/preparation/BioGridDataCuration.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436763896824" ignored="false" />
+    <file path="/style.css" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443696935193" ignored="false" />
+    <file path="H:/FPIDetector/src/main/java/preparation/BioGridDataCuration.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436932136610" ignored="false" />
+    <file path="H:/FPIDetector/src/main/resources/BioGrid_result/InteractionSplitePubmed/PositiveData.txt" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436932136610" ignored="false" />
+    <file path="H:/FPIDetector/src/main/resources/BioGrid_result/InteractionSplitePubmed/NegativeCounter.txt" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436887014998" ignored="false" />
+    <file path="H:/FPIDetector/src/main/resources/BioGrid_result/InteractionSplitePubmed/NegativeData.txt" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436932136610" ignored="false" />
+    <file path="H:/FPIDetector/src/main/java/preparation/Preparation_Run.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436933962966" ignored="false" />
+    <file path="H:/FPIDetector/src/main/java/preparation/ReduceDataSetTOThreeReffrences.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436935412551" ignored="false" />
+    <file path="H:/FPIDetector/BioGrid_result/All_hprd_protein.txt" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436935264315" ignored="false" />
+    <file path="/Unicode.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436942234166" ignored="false" />
+    <file path="/testi.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1436945802503" ignored="false" />
+    <file path="/Dashboard.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1444025610466" ignored="false" />
+    <file path="/prescriptionCount.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437548974920" ignored="false" />
+    <file path="H:/FPIDetector/src/main/java/preparation/HPRD.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437656220729" ignored="false" />
+    <file path="H:/FPIDetector/src/main/java/Main.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437651923506" ignored="false" />
+    <file path="/HPRD.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437656086237" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/test.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437900725530" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/index.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443212450786" ignored="false" />
+    <file path="/index.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443212445134" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/main.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437973135932" ignored="false" />
+    <file path="/main.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437908957098" ignored="false" />
+    <file path="/dataTables.responsive.css" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1437990797028" ignored="false" />
+    <file path="/jquery.dataTables.css" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438002233911" ignored="false" />
+    <file path="$USER_HOME$/Desktop/testii/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438169048195" ignored="false" />
+    <file path="$PROJECT_DIR$/../../FPIDetector/pom.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438170108197" ignored="false" />
+    <file path="/UploadFile.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438288597149" ignored="false" />
+    <file path="/FileUploadHandler.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440154963631" ignored="false" />
+    <file path="/Main.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440617974561" ignored="false" />
+    <file path="/ReduceDataSetTOThreeReffrences.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438324061769" ignored="false" />
+    <file path="/IG1TruePositive.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438326838962" ignored="false" />
+    <file path="/IG1.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438326731672" ignored="false" />
+    <file path="/KpathRatioTruePositive.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438327246899" ignored="false" />
+    <file path="/PathRatioInformation.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438327381108" ignored="false" />
+    <file path="/PathRatioIG1TruePositive.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438327613290" ignored="false" />
+    <file path="/PathRatioIG1Information.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438327655220" ignored="false" />
+    <file path="/MutualClusteringCoefficientTruePositive.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438328169184" ignored="false" />
+    <file path="/SAPTruePositive.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438330094258" ignored="false" />
+    <file path="/shortestAlternativePathTruePositive.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438330332169" ignored="false" />
+    <file path="/CreateVekaFormate.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440700199433" ignored="false" />
+    <file path="/prediction.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440700531368" ignored="false" />
+    <file path="/Run.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438350193888" ignored="false" />
+    <file path="$PROJECT_DIR$/../../backup/paper-original/.idea/workspace.xml" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1438780509946" ignored="false" />
+    <file path="/testt.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439012728541" ignored="false" />
+    <file path="/result.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439024537335" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/data/README2.TXT" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439033020827" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/webapp/template/content-header.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439460897839" ignored="false" />
+    <file path="/validateNetwork.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440617786347" ignored="false" />
+    <file path="/validateInteraction.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443106038201" ignored="false" />
+    <file path="/help.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439468986839" ignored="false" />
+    <file path="/trainModel.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443184573908" ignored="false" />
+    <file path="/dropzoneTest.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439581500104" ignored="false" />
+    <file path="/validateNetwork-test.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439582299773" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/css/style.css" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439644987499" ignored="false" />
+    <file path="/test2.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1439654939734" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/js/default.js" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441477083556" ignored="false" />
+    <file path="/default.js" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440442868825" ignored="false" />
+    <file path="/alert.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440617644977" ignored="false" />
+    <file path="/Start.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440617933707" ignored="false" />
+    <file path="/SendAttachmentInEmail.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1440618068387" ignored="false" />
+    <file path="/PathRatioIG1InformationInteractionValidation[Conflict].java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441471360395" ignored="false" />
+    <file path="/MutualClusteringCoefficientDependent.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441474430334" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/bioSoft.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441805685907" ignored="false" />
+    <file path="/bioSoft.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441805685907" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/bio.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441806411304" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/biosoft.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441807205719" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/templateDownload.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441819259203" ignored="false" />
+    <file path="/templateDownload.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441816283098" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/rpiCool.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441819705086" ignored="false" />
+    <file path="/rpiCool.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441819705086" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/afpCool.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441819721330" ignored="false" />
+    <file path="/afpCool.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441819721330" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/MachineLearning.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441820000448" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/MatlabProgramming.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441820351491" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/PythonBioinformaticians.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441820405102" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/DataStructures.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441820442021" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/Bioinformatics.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441820485016" ignored="false" />
+    <file path="/shortestAlternativePathDependent.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441999670170" ignored="false" />
+    <file path="/RunInteractionValidation.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1441951290234" ignored="false" />
+    <file path="/InteractionValidationMain.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1442691925831" ignored="false" />
+    <file path="/UploadTruePositive.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443184662539" ignored="false" />
+    <file path="/UploadTrueNegative.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443184217784" ignored="false" />
+    <file path="/StartTrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443189036009" ignored="false" />
+    <file path="/MainTrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443525543648" ignored="false" />
+    <file path="/PreparationTrianModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443193124612" ignored="false" />
+    <file path="/CuratedGraphTrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443530819048" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../workGroup/biocool/web/DiscreteMathBiologists.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443213109159" ignored="false" />
+    <file path="/DiscreteMathBiologists.html" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443213109159" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/model/PatientInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443361956676" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/model/AdmissionInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443362064259" ignored="false" />
+    <file path="/AdmissionInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443362003390" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/model/InsuranceInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443362206441" ignored="false" />
+    <file path="/InsuranceInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443362052903" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/message/DispensedPrescriptionRequest.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443362134095" ignored="false" />
+    <file path="/DispensedPrescriptionRequest.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443362128549" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/model/CheckedOutMedicationItemInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443362201078" ignored="false" />
+    <file path="/CheckedOutMedicationItemInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443362191867" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/Dashboard.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1444025655993" ignored="false" />
+    <file path="/RunTrainModelIG1.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443425890261" ignored="false" />
+    <file path="/IG1TrianModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443421425284" ignored="false" />
+    <file path="/CreateDirectedGraphIG1TrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443425745185" ignored="false" />
+    <file path="/CreateDirectedGraphIG1TrianModelStandard.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443423108394" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/com/masoud/iG1/CreateDirectedGraphIG1TrianModelStandard.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443423207954" ignored="false" />
+    <file path="/CreateDirectedGraphIG1StandardTrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443425879314" ignored="false" />
+    <file path="/RunTrainModelIG1_curated.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443446077256" ignored="false" />
+    <file path="/IG1TrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443426934579" ignored="false" />
+    <file path="/CreateDirectedGraphIG1CuratedTrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443445775456" ignored="false" />
+    <file path="/RunTrainModelIG1_2.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443446472899" ignored="false" />
+    <file path="/RunTrainModelKpathRatio.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443447901143" ignored="false" />
+    <file path="/PathRatioInformationTrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443447894429" ignored="false" />
+    <file path="/RunTrainModelCompinedIG1PathRatio.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443448657863" ignored="false" />
+    <file path="/PathRatioIG1InformationTrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443448647656" ignored="false" />
+    <file path="/RunTrainModelMCC.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443521895399" ignored="false" />
+    <file path="/RunAlternativePathFinderShortestPathTrainModel.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443525566259" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/Detail.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443689253775" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/webapp/resource/css/style.css" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443696936825" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/webapp/resource/css/bootstrap.min.css" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443696991739" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/webapp/page/search.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443699196881" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/PharmacyCode.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443699176808" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/PatientInformation.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443698145980" ignored="false" />
+    <file path="/PatientInformation.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443698138704" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/InsuranceNumber.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443698199054" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/AttendingDoctorInfo.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443698207985" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/java/com/behpardaz/Eprescription/AdmissionDate.java" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443698217190" ignored="false" />
+    <file path="F:/Project/java/Eprescription/src/main/webapp/page/detail.jsp" changelist="9cf2f92a-7909-48d1-a3bc-25d76406b698" time="1443700685241" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Eprescription" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="MainTrainModel.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/MainTrainModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="37" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.49819493">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/kpathRatio/KpathRatioTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/kpathRatio/RunTrainModelKpathRatio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/kpathRatio/PathRatioInformationTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/compined_IG1_PathRatio/RunTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/compined_IG1_PathRatio/PathRatioIG1TrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/compined_IG1_PathRatio/RunTrainModelCompinedIG1PathRatio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/compined_IG1_PathRatio/PathRatioIG1InformationTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/mutualClusteringCoefficient/RunMutualClusteringCoefficient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/mutualClusteringCoefficient/RunTrainModelMCC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/mutualClusteringCoefficient/MutualClusteringCoefficientTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinder/RunAlternativePathFinderTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinder/SAPTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinderShortestPath/RunAlternativePathFinderShortestPathTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinderShortestPath/shortestAlternativePathTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/preparation/CuratedGraphTrainModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/masoud/MainTrainModel.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:\programing\java-plugin\apache-maven-3.2.1" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="FPIDetector Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="FPIDetector Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masoud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FPIDetector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="masoud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="preparation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="last_opened_file_path" value="H:/FPIDetector" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.masoud.alternativePathFinderShortestPath" />
+      <recent name="com.masoud.alternativePathFinder" />
+      <recent name="com.masoud.mutualClusteringCoefficient" />
+      <recent name="com.masoud.compined_IG1_PathRatio" />
+      <recent name="com.masoud.kpathRatio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\azizi.BEHPARDAZ\Google Drive\thesis\independent-model\FPIDetector\src\main\java\com\masoud\alternativePathFinderShortestPath" />
+      <recent name="C:\Users\masoud\Google Drive\thesis\independent-model\FPIDetector\src\main\webapp\page" />
+      <recent name="C:\Users\masoud\Google Drive\thesis\independent-model\FPIDetector\src\main" />
+      <recent name="C:\Users\masoud\Google Drive\thesis\independent-model\FPIDetector\src\main\webapp" />
+      <recent name="D:\activity\project\FPIDetector\src\main\java\com\masoud" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.masoud" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\masoud\Google Drive\thesis\independent-model\FPIDetector\src\main\webapp\resource\css" />
+      <recent name="C:\Users\masoud\Google Drive\thesis\independent-model\FPIDetector\src\main\webapp\resource\js" />
+      <recent name="D:\activity\project\FPIDetector\src\main\webapp\page" />
+      <recent name="F:\Project\java\Eprescription\src\main\webapp\resource\js" />
+      <recent name="F:\Project\java\Eprescription\src\main\webapp\resource" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="TomeeConfiguration" factoryName="Local">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Eprescription:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_Eprescription" />
+        <option name="HTTP_PORT" value="8080" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63915" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Eprescription:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="false" name="Tomcat 7.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="update-resources" />
+      <deployment>
+        <artifact name="FPIDetector:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Eprescription_4" />
+        <option name="HTTP_PORT" value="8070" />
+        <option name="JNDI_PORT" value="1079" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63915" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="FPIDetector:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StatisticProjectComponent">
+    <option name="excludeCompilerOutput" value="true" />
+    <option name="excludeIdea9ArtifactDirectory" value="true" />
+    <option name="excludeTargetDirectories" value="true" />
+    <option name="activateWhenOpenProject" value="true" />
+    <option name="excludedDirectories">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="fileTypes" value="class;svn-base;svn-work;Extra;gif;png;jpg;jpeg;bmp;tga;tiff;ear;war;zip;jar;iml;iws;ipr;bz2;gz;" />
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cf2f92a-7909-48d1-a3bc-25d76406b698" name="Default" comment="" />
+      <created>1435045322221</created>
+      <updated>1435045322221</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53162396" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.548718" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10378788" sideWeight="0.6666667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.548718" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51107323" sideWeight="0.6492424" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41196582" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60477" sideWeight="0.21060605" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21742424" sideWeight="0.124786325" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53504276" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19318181" sideWeight="0.23247863" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1310606" sideWeight="0.54017097" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42930153" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27575758" sideWeight="0.54017097" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45982906" sideWeight="0.78939396" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31175467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/compined_IG1_PathRatio/PathRatioIG1InformationTrainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="231" selection-end="305" vertical-scroll-proportion="-1.8103896" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/compined_IG1_PathRatio/RunTrainModelCompinedIG1PathRatio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="53" selection-start="315" selection-end="315" vertical-scroll-proportion="0.42713568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinder/Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="56" selection-end="56" vertical-scroll-proportion="0.085427135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinder/SAPTrainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="52" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.48850575" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinder/RunAlternativePathFinderTrainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="223" selection-end="238" vertical-scroll-proportion="0.42713568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinderShortestPath/shortestAlternativePathTruePositive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.23351648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/iG1/IG1TrianModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="119" selection-start="1408" selection-end="1439" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinderShortestPath/shortestAlternativePathTrainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="38" selection-start="4055" selection-end="4055" vertical-scroll-proportion="0.47316104" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/alternativePathFinderShortestPath/RunAlternativePathFinderShortestPathTrainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="30" selection-start="217" selection-end="226" vertical-scroll-proportion="0.27037773" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/preparation/Preparation_Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="230" selection-end="230" vertical-scroll-proportion="0.16588785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/preparation/CuratedGraphTrainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="11" selection-start="7378" selection-end="7378" vertical-scroll-proportion="0.22161172">
+          <folding>
+            <element signature="method#UploadFileToMyId#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#StandardizeMergedData#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#InformationDataTruePositive#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#InformationDataTrueNegative#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#InformationDataTrainModel#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#ConvertF2FDirectedTruePositive#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#ConvertF2FDirectedTrueNetative#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#ConvertF2FDirectedTrainDataSet#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#ConvertF2FUnDirectedTruePositive#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#ConvertF2FUnDirectedTrueNegative#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#ConvertF2FUnDirectedTrainDataSet#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#curatedGraph#0;class#CuratedGraphTrainModel#0" expanded="false" />
+            <element signature="method#main#0;class#CuratedGraphTrainModel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/preparation/PreparationTrianModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="36" selection-start="541" selection-end="541" vertical-scroll-proportion="0.53296703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/preparation/CheckTrueNegativeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="887" selection-end="953" vertical-scroll-proportion="0.031135531">
+          <folding>
+            <element signature="e#895#914#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/iG1_2/RunTrainModelIG1_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="108" selection-end="108" vertical-scroll-proportion="0.21288015">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/iG1_curated/RunTrainModelIG1_curated.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="94" selection-end="94" vertical-scroll-proportion="0.12164579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/masoud/MainTrainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="37" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.49819493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>FPIDetector:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FPIDetector</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.googlecode.json-simple:json-simple:1.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
