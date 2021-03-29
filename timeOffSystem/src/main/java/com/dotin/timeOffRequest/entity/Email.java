@@ -1,7 +1,7 @@
 package com.dotin.timeOffRequest.entity;
 
-import java.util.Set;
 import javax.persistence.*;
+import java.util.Set;
 
 
 @Entity
@@ -9,8 +9,8 @@ import javax.persistence.*;
 
 public class Email {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "c_id",nullable = false,unique = true)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "c_id", nullable = false, unique = true)
     private Long id;
     @Column(name = "c_subject")
     private String subject;

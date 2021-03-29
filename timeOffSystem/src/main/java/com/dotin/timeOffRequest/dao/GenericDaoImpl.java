@@ -91,7 +91,6 @@ public class GenericDaoImpl<entityType, PK extends Serializable> implements Gene
         return newObject;
     }
 
-
     @Override
     public entityType getEntity(PK id) {
         return currentSession.get(classType, id);
@@ -101,9 +100,8 @@ public class GenericDaoImpl<entityType, PK extends Serializable> implements Gene
     public List<entityType> selectAll() {
         List<entityType> result = null;
         Criteria criteria = currentSession.createCriteria(this.classType);
-        criteria.add(Restrictions.eq("active" , true));
+        criteria.add(Restrictions.eq("active", true));
         result = criteria.list();
         return result;
     }
-
 }

@@ -6,13 +6,15 @@ import javax.persistence.*;
 @Table(name = "t_timeOffRequest")
 public class TimeOffRequest {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "c_id",nullable = false,unique = true)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "c_id", nullable = false, unique = true)
     private Long id;
     @Column(name = "c_startTime")
     private String startTime;
     @Column(name = "c_endTime")
     private String endTime;
+    @Column(name = "c_timeOffDayAmount")
+    private Integer timeOffDayAmount = 0;
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Employee.class, optional = false)
     @JoinColumn(name = "c_employee")
     private Employee employee;
@@ -89,5 +91,13 @@ public class TimeOffRequest {
 
     public void setVersion(Integer version) {
         this.version = version;
+    }
+
+    public Integer getTimeOffDayAmount() {
+        return timeOffDayAmount;
+    }
+
+    public void setTimeOffDayAmount(Integer timeOffDayAmount) {
+        this.timeOffDayAmount = timeOffDayAmount;
     }
 }

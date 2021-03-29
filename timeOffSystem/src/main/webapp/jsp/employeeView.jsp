@@ -7,12 +7,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>viewStudent</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>employeeView</title>
+    <link rel="stylesheet" type="text/css" href="../resource/home.css">
 </head>
 <body>
 <header>
-    <%@include file="header2.jsp" %>
+    <%@include file="header.jsp" %>
 </header>
 <div class="row" style="background-color:#d3b1c2">
     <%

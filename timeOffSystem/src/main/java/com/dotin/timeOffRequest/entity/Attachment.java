@@ -1,25 +1,16 @@
 package com.dotin.timeOffRequest.entity;
 
-import org.hibernate.annotations.CacheConcurrencyStrategy;
-
 import javax.persistence.*;
-import java.sql.Blob;
-import javax.persistence.Cacheable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Entity
 @Table(name = "t_attachment")
 public class Attachment {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "c_id",nullable = false,unique = true)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "c_id", nullable = false, unique = true)
     private Long id;
-    @Lob
-    @Column(name = "c_content")
-    private Blob content;
+    @Column(name = "c_file_name")
+    private String fileName;
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Email.class)
     @JoinColumn(name = "c_email")
     private Email email;
@@ -39,12 +30,12 @@ public class Attachment {
         this.id = id;
     }
 
-    public Blob getContent() {
-        return content;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setContent(Blob content) {
-        this.content = content;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public Email getEmail() {

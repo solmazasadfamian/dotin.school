@@ -1,9 +1,5 @@
 package com.dotin.timeOffRequest.entity;
 
-import org.hibernate.annotations.CacheConcurrencyStrategy;
-
-import javax.persistence.Entity;
-
 import javax.persistence.*;
 
 @Entity
@@ -11,11 +7,11 @@ import javax.persistence.*;
 
 public class CategoryElement {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "c_id",nullable = false,unique = true)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "c_id", nullable = false, unique = true)
     private Long id;
     @Column(name = "c_code")
-    private Integer code;
+    private Long code;
     @Column(name = "c_name")
     private String name;
     @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = CascadeType.ALL)
@@ -34,11 +30,11 @@ public class CategoryElement {
         this.id = id;
     }
 
-    public Integer getCode() {
+    public Long getCode() {
         return code;
     }
 
-    public void setCode(Integer code) {
+    public void setCode(Long code) {
         this.code = code;
     }
 

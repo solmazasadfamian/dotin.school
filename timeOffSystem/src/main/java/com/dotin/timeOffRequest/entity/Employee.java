@@ -7,9 +7,11 @@ import javax.persistence.*;
 
 public class Employee {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "c_id")
     private Long id;
+    @Column(name = "timeOffBalance")
+    private Integer timeOffBalance = 30;
     @Column(name = "c_firstName")
     private String firstName;
     @Column(name = "c_lastName")
@@ -22,10 +24,10 @@ public class Employee {
     private String address;
     @Column(name = "c_emailAddress")
     private String emailAddress;
-    @ManyToOne (fetch=FetchType.LAZY, targetEntity = CategoryElement.class , cascade = CascadeType.ALL)
-    @JoinColumn(name = "c_role" , referencedColumnName = "c_id")
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElement.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "c_role", referencedColumnName = "c_id")
     private CategoryElement role;
-    @ManyToOne (cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "c_manager")
     private Employee manager;
     @Column(name = "c_disabled")
@@ -130,5 +132,13 @@ public class Employee {
 
     public void setNationalCode(String nationalCode) {
         this.nationalCode = nationalCode;
+    }
+
+    public Integer getTimeOffBalance() {
+        return timeOffBalance;
+    }
+
+    public void setTimeOffBalance(Integer timeOffBalance) {
+        this.timeOffBalance = timeOffBalance;
     }
 }

@@ -1,8 +1,9 @@
 package com.dotin.timeOffRequest.entity;
+
+import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
-import org.hibernate.annotations.Cache;
 
 @Entity
 @Table(name = "t_category")
@@ -10,8 +11,8 @@ import org.hibernate.annotations.Cache;
 @Cache(usage = CacheConcurrencyStrategy.TRANSACTIONAL)
 public class Category {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "c_id",nullable = false,unique = true)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "c_id", nullable = false, unique = true)
     private Long id;
     @Column(name = "c_name")
     private String name;
@@ -19,9 +20,6 @@ public class Category {
     private Boolean disabled = false;
     @Column(name = "c_active")
     private Boolean active = true;
-    @Version
-    @Column(name = "c_version")
-    private Integer version;
 
     public Long getId() {
         return id;
@@ -55,11 +53,4 @@ public class Category {
         this.active = deleted;
     }
 
-    public Integer getVersion() {
-        return version;
-    }
-
-    public void setVersion(Integer version) {
-        this.version = version;
-    }
 }
