@@ -93,7 +93,7 @@ public class GenericDaoImpl<entityType, PK extends Serializable> implements Gene
 
     @Override
     public entityType getEntity(PK id) {
-        return currentSession.get(classType, id);
+            return currentSession.get(classType, id);
     }
 
     @Override

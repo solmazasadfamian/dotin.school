@@ -1,43 +1,49 @@
 package com.dotin.timeOffRequest.service;
 
 import com.dotin.timeOffRequest.dao.AttachmentDao;
+import com.dotin.timeOffRequest.dto.AttachmentDto;
 import com.dotin.timeOffRequest.entity.Attachment;
+import com.dotin.timeOffRequest.mapper.AttachmentMapper;
 import org.apache.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AttachmentService {
     private final static Logger log = Logger.getLogger(AttachmentService.class.getName());
 
-    private AttachmentDao attachmentDao;
+    private final AttachmentDao attachmentDao;
+    private final AttachmentMapper attachmentMapper;
 
     public AttachmentService() {
         attachmentDao = new AttachmentDao();
+        attachmentMapper = new AttachmentMapper();
     }
 
-    public Attachment add(Attachment attachment) {
-        log.info("object with below info for save has received : " + attachment.getFileName());
+    public AttachmentDto add(AttachmentDto attachmentDto) {
+        log.info("object with below info for save has received : " + attachmentDto.getFileName());
+        Attachment attachment = attachmentMapper.toEntity(attachmentDto);
         attachmentDao.openCurrentSessionWithTransaction();
         Attachment savedAttachment = attachmentDao.insert(attachment);
         attachmentDao.closeCurrentSessionWithTransaction();
-        return savedAttachment;
+        return attachmentMapper.toDto(savedAttachment);
     }
 
-    public void update(Attachment newAttachment) {
-        log.info("object with below info for update has received : " + newAttachment.getFileName());
+    public void update(AttachmentDto newAttachmentDto) {
+        log.info("object with below info for update has received : " + newAttachmentDto.getFileName());
         attachmentDao.openCurrentSessionWithTransaction();
-        Attachment attachment = attachmentDao.getEntity(newAttachment.getId());
-        newAttachment.setVersion(attachment.getVersion());
-        attachmentDao.update(newAttachment);
+        Attachment attachment = attachmentDao.getEntity(newAttachmentDto.getId());
+        newAttachmentDto.setVersion(attachment.getVersion());
+        attachmentDao.update(attachmentMapper.toEntity(newAttachmentDto));
         attachmentDao.closeCurrentSessionWithTransaction();
     }
 
-    public Attachment findById(Long id) {
+    public AttachmentDto findById(Long id) {
         log.info("request with below id for find has received : " + id);
         attachmentDao.openCurrentSessionWithTransaction();
         Attachment attachment = attachmentDao.getEntity(id);
         attachmentDao.closeCurrentSessionWithTransaction();
-        return attachment;
+        return attachmentMapper.toDto(attachment);
     }
 
     public void delete(Long id) {
@@ -49,12 +55,16 @@ public class AttachmentService {
         attachmentDao.closeCurrentSessionWithTransaction();
     }
 
-    public List<Attachment> findAll() {
+    public List<AttachmentDto> findAll() {
         log.info("request for find all has received");
         attachmentDao.openCurrentSessionWithTransaction();
         List<Attachment> attachmentList = attachmentDao.selectAll();
         attachmentDao.closeCurrentSessionWithTransaction();
-        return attachmentList;
+        List<AttachmentDto> attachmentDtoList = new ArrayList<>();
+        for (Attachment attachment : attachmentList) {
+            attachmentDtoList.add(attachmentMapper.toDto(attachment));
+        }
+        return attachmentDtoList;
     }
 }
 

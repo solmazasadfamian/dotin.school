@@ -1,6 +1,6 @@
 <%@ page import="java.util.List" %>
-<%@ page import="com.dotin.timeOffRequest.entity.Employee" %>
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
+<%@ page import="com.dotin.timeOffRequest.dto.EmployeeDto" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -22,7 +22,7 @@
 
 <%
     EmployeeService employeeService = new EmployeeService();
-    List<Employee> employees = employeeService.findAll();
+    List<EmployeeDto> employees = employeeService.findAll();
 
 %>
 
@@ -36,13 +36,14 @@
         </div>
         <div class="row">
             <div class="col-25">
+                <span style="color: red">*</span>
                 <label for="sender">Sender</label>
             </div>
             <div class="col-75">
                 <select id="sender" name="sender">
                     <option></option>
                     <%
-                        for (Employee employee : employees) {
+                        for (EmployeeDto employee : employees) {
                     %>
                     <option value="<%=employee.getId()%>"><%=employee.getFirstName()%>&nbsp;<%=employee.getLastName()%>
                     </option>
@@ -54,13 +55,14 @@
         </div>
         <div class="row">
             <div class="col-25">
+                <span style="color: red">*</span>
                 <label for="receiver">receiver</label>
             </div>
             <div class="col-75">
                 <select data-placeholder="Begin typing a name to filter..." id="receiver" name="receiver" multiple
                         class="chosen-select">
                     <%
-                        for (Employee employee : employees) {
+                        for (EmployeeDto employee : employees) {
                     %>
                     <option value=""></option>
                     <option value="<%=employee.getId()%>"><%=employee.getFirstName()%>&nbsp;<%=employee.getLastName()%>
@@ -137,9 +139,7 @@
         addRemoveLinks: true,
         uploadMultiple: true,
         dictResponseError: 'Server not Configured',
-/*
         acceptedFiles: ".jpeg,.jpg,.png,.gif,.*",
-*/
         maxFiles: 1,
         init: function () {
             var self = this;
@@ -194,7 +194,21 @@
         }
     });
 
+    function validate(){
+        var result = true;
+        if($("#sender").val() == null || $("#sender").val()=="") {
+            alert("sender must be present, please enter sender");
+            result = false;
+        }
+        if($("#receiver").val() == null || $("#receiver").val()=="") {
+            alert("receiver must be present, please enter receiver");
+            result = false;
+        }
+        return result;
+    }
      $('#save').click(function () {
+         if(!validate())
+             return;
          $.ajax({
              url: '/email-controller',
              type: 'POST',

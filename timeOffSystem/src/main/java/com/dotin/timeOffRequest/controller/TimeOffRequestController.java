@@ -1,7 +1,6 @@
 package com.dotin.timeOffRequest.controller;
 
-import com.dotin.timeOffRequest.entity.Employee;
-import com.dotin.timeOffRequest.entity.TimeOffRequest;
+import com.dotin.timeOffRequest.dto.TimeOffRequestDto;
 import com.dotin.timeOffRequest.exception.BadRequestException;
 import com.dotin.timeOffRequest.service.CategoryElementService;
 import com.dotin.timeOffRequest.service.EmployeeService;
@@ -18,9 +17,9 @@ import java.io.PrintWriter;
 @WebServlet("/time-off-request-controller")
 public class TimeOffRequestController extends HttpServlet {
     private final static Logger log = Logger.getLogger(TimeOffRequestController.class.getName());
-    private TimeOffRequestService timeOffRequestService = new TimeOffRequestService();
-    private CategoryElementService categoryElementService = new CategoryElementService();
-    private EmployeeService employeeService = new EmployeeService();
+    private final TimeOffRequestService timeOffRequestService = new TimeOffRequestService();
+    private final CategoryElementService categoryElementService = new CategoryElementService();
+    private final EmployeeService employeeService = new EmployeeService();
 
     public TimeOffRequestController() {
         super();
@@ -32,18 +31,17 @@ public class TimeOffRequestController extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        TimeOffRequest timeOffRequest = new TimeOffRequest();
+        TimeOffRequestDto timeOffRequestDto = new TimeOffRequestDto();
         if (request.getParameter("id") != null)
-            timeOffRequest.setId(Long.valueOf(request.getParameter("id")));
-        timeOffRequest.setStartTime(request.getParameter("startTime"));
-        timeOffRequest.setEndTime(request.getParameter("endTime"));
-        timeOffRequest.setTimeOffDayAmount(Integer.valueOf(request.getParameter("dayAmount")));
+            timeOffRequestDto.setId(Long.valueOf(request.getParameter("id")));
+        timeOffRequestDto.setStartTime(request.getParameter("startTime"));
+        timeOffRequestDto.setEndTime(request.getParameter("endTime"));
+        timeOffRequestDto.setTimeOffDayAmount(Integer.valueOf(request.getParameter("dayAmount")));
         if (request.getParameter("employee") != null) {
-            Employee employee = employeeService.findById(Long.valueOf(request.getParameter("employee")));
-            timeOffRequest.setEmployee(employee != null ? employee : null);
+            timeOffRequestDto.setEmployeeId(Long.valueOf(request.getParameter("employee")));
         }
         try {
-            timeOffRequestService.preAdd(timeOffRequest);
+            timeOffRequestService.preAdd(timeOffRequestDto);
             response.setStatus(200);
             out.write("<p><strong style=\"text-align: center\">success</strong><br/><span>the request successfully done</span></p>");
             out.close();
@@ -66,15 +64,17 @@ public class TimeOffRequestController extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/jsp/timeOffRequest.jsp?employee=" + request.getParameter("employee"));
         }
         if (action.equals("approve") && request.getParameter("id") != null) {
-            TimeOffRequest timeOffRequest = timeOffRequestService.findById(Long.valueOf(request.getParameter("id")));
-            timeOffRequest.setTimeOffStatus(categoryElementService.findByCode(200l));
-            timeOffRequestService.update(timeOffRequest);
+            TimeOffRequestDto timeOffRequestDto = timeOffRequestService.findById(Long.valueOf(request.getParameter("id")));
+            timeOffRequestDto.setTimeOffStatusId(categoryElementService.findByCode(200l).getId());
+            timeOffRequestService.update(timeOffRequestDto);
             response.sendRedirect(request.getContextPath() + "/jsp/checkTimeOff.jsp?employee=" + request.getParameter("employee"));
         }
         if (action.equals("reject") && request.getParameter("id") != null) {
-            TimeOffRequest timeOffRequest = timeOffRequestService.findById(Long.valueOf(request.getParameter("id")));
-            timeOffRequest.setTimeOffStatus(categoryElementService.findByCode(400l));
-            timeOffRequestService.update(timeOffRequest);
+            TimeOffRequestDto timeOffRequestDto = timeOffRequestService.findById(Long.valueOf(request.getParameter("id")));
+            timeOffRequestDto.setTimeOffStatusId(categoryElementService.findByCode(400l).getId());
+            timeOffRequestService.update(timeOffRequestDto);
+            timeOffRequestService.updateEmployeeBalance(timeOffRequestDto);
+
             response.sendRedirect(request.getContextPath() + "/jsp/checkTimeOff.jsp?employee=" + request.getParameter("employee"));
         }
     }

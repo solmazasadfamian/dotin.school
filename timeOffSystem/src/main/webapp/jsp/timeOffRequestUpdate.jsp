@@ -1,9 +1,9 @@
 <%@ page import="com.dotin.timeOffRequest.service.*" %>
-<%@ page import="com.dotin.timeOffRequest.entity.TimeOffRequest" %>
+<%@ page import="com.dotin.timeOffRequest.dto.TimeOffRequestDto" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>timeOffRequestUpdate</title>
+    <title>employeeSaveForm</title>
     <script src="../resource/jquery.min.js"></script>
     <script src="../resource/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../resource/bootstrap.min.css">
@@ -17,7 +17,7 @@
 
 <%
     TimeOffRequestService timeOffRequestService = new TimeOffRequestService();
-    TimeOffRequest timeOffRequest = timeOffRequestService.findById(Long.valueOf(request.getParameter("id")));
+    TimeOffRequestDto timeOffRequest = timeOffRequestService.findById(Long.valueOf(request.getParameter("id")));
 %>
 <div class="container" style="width: 491.37px;">
     <div class="row">

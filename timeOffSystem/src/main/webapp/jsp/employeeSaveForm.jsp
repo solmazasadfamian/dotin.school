@@ -1,8 +1,8 @@
-<%@ page import="com.dotin.timeOffRequest.entity.CategoryElement" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.dotin.timeOffRequest.entity.Employee" %>
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
 <%@ page import="com.dotin.timeOffRequest.service.*" %>
+<%@ page import="com.dotin.timeOffRequest.dto.CategoryElementDto" %>
+<%@ page import="com.dotin.timeOffRequest.dto.EmployeeDto" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -17,11 +17,11 @@
 </header>
 <%
     CategoryElementService categoryElementService = new CategoryElementService();
-    List<CategoryElement> categoryElementList = categoryElementService.findAllByCode("category.id" , 1l);
+    List<CategoryElementDto> categoryElementList = categoryElementService.findAllByCode("category.id" , 1l);
     EmployeeService employeeService = new EmployeeService();
-    List<Employee> employees = employeeService.findAll();
+    List<EmployeeDto> employees = employeeService.findAll();
 %>
-<div class="container" style="width: 491.37px;">
+<div class="container" style="width: 500px;">
     <div class="row">
         <div class="col-md-12">
             <div class="alert alert-block alert-danger fade in" id="alert-info">
@@ -30,6 +30,7 @@
     </div>
         <div class="row">
             <div class="col-25">
+                <span style="color: red">*</span>
                 <label for="fname">First Name</label>
             </div>
             <div class="col-75">
@@ -38,6 +39,7 @@
         </div>
         <div class="row">
             <div class="col-25">
+                <span style="color: red">*</span>
                 <label for="lname">Last Name</label>
             </div>
             <div class="col-75">
@@ -46,6 +48,7 @@
         </div>
         <div class="row">
             <div class="col-25">
+                <span style="color: red">*</span>
                 <label for="nationalCode">National Code</label>
             </div>
             <div class="col-75">
@@ -56,12 +59,13 @@
 
         <div class="row">
             <div class="col-25">
+                <span style="color: red">*</span>
                 <label for="role">Role</label>
             </div>
             <div class="col-75">
                 <select id="role" name="role">
                     <%
-                        for (CategoryElement categoryElement : categoryElementList) {
+                        for (CategoryElementDto categoryElement : categoryElementList) {
                     %>
                     <option value="<%=categoryElement.getId()%>"><%=categoryElement.getName()%>
                     </option>
@@ -99,7 +103,7 @@
                 <select id="manager" name="manager">
                     <option></option>
                     <%
-                        for (Employee employee : employees) {
+                        for (EmployeeDto employee : employees) {
                     %>
                     <option value="<%=employee.getId()%>"><%=employee.getFirstName()%>&nbsp;<%=employee.getLastName()%>
                     </option>
@@ -118,7 +122,30 @@
 <script>
     $('#alert-info').hide();
 
+    function validate(){
+        var result = true;
+        if($("#fname").val() == null || $("#fname").val()=="") {
+            alert("first name must be present, please enter first name");
+            result = false;
+        }
+        if($("#lname").val() == null || $("#lname").val()=="") {
+            alert("last name must be present, please enter last name");
+            result = false;
+        }
+        if($("#nationalCode").val() == null || $("#nationalCode").val()=="") {
+            alert("national code must be present, please enter national code");
+            result = false;
+        }
+        if($("#role").val() == null || $("#role").val()=="") {
+            alert("role must be present, please enter role");
+            result = false;
+        }
+        return result;
+    }
+
     $('#save').click(function () {
+        if(!validate())
+            return;
         $.ajax({
             url: '/employee-controller',
             type: 'POST',

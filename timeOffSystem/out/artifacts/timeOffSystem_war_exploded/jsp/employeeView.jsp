@@ -2,8 +2,10 @@
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
 <%@ page import="com.dotin.timeOffRequest.entity.Employee" %>
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
-<%@ page import="com.dotin.timeOffRequest.entity.CategoryElement" %>
 <%@ page import="com.dotin.timeOffRequest.service.CategoryElementService" %>
+<%@ page import="com.dotin.timeOffRequest.dto.EmployeeDto" %>
+<%@ page import="com.dotin.timeOffRequest.dto.CategoryElementDto" %>
+<%@ page import="com.dotin.timeOffRequest.mapper.EmployeeMapper" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -18,26 +20,29 @@
     <%
         String employeeId = request.getParameter("id");
         EmployeeService employeeService = new EmployeeService();
-        Employee employee = employeeService.findById(Long.valueOf(employeeId));
+        EmployeeDto employeeDto = employeeService.findById(Long.valueOf(employeeId));
         CategoryElementService categoryElementService = new CategoryElementService();
-        CategoryElement role = categoryElementService.findById(employee.getRole().getId());
+        CategoryElementDto role = categoryElementService.findById(employeeDto.getRoleId());
     %>
-    <p>id: <%=employee.getId()%>
+    <p>id: <%=employeeDto.getId()%>
     </p>
-    <p>fist name: <%=employee.getFirstName()%>
+    <p>fist name: <%=employeeDto.getFirstName()%>
     </p>
-    <p>last name: <%=employee.getLastName()%>
+    <p>last name: <%=employeeDto.getLastName()%>
     </p>
-    <p>national code: <%=employee.getNationalCode()%>
+    <p>national code: <%=employeeDto.getNationalCode()%>
     </p>
     <p>role: <%=role.getName()%>
     </p>
-    <p>phone number: <%=employee.getPhoneNumber()%>
+    <p>phone number: <%=employeeDto.getPhoneNumber()%>
     </p>
-    <p>email address: <%=employee.getAddress()%>
+    <p>email address: <%=employeeDto.getAddress()%>
     </p>
     <%
-        if (employee.getManager() != null) {
+        if (employeeDto.getManagerId() != null) {
+            EmployeeMapper employeeMapper = new EmployeeMapper();
+            Employee employee = employeeMapper.toEntity(employeeDto);
+
     %>
     <p>manager: <%=employee.getManager().getFirstName()%> <%=employee.getManager().getLastName()%>
     </p>

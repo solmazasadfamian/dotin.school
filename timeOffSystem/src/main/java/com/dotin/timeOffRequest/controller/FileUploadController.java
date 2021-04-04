@@ -20,7 +20,7 @@ public class FileUploadController extends HttpServlet {
     final static Logger logger = Logger.getLogger(FileUploadController.class);
 
     public static String fileUploadName = null;
-    public static boolean fileUploaded = false;
+    public static boolean fileUploded = false;
     java.io.File file = new java.io.File("");
     private String name = null;
 
@@ -39,7 +39,7 @@ public class FileUploadController extends HttpServlet {
                 }
                 JSONArray result = null;
                 System.out.println(name);
-                fileUploaded = true;
+                fileUploded = true;
                 fileUploadName = name;
                 logger.info(result.toString());
                 request.setAttribute("message", fileUploadName);

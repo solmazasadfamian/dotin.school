@@ -20,6 +20,7 @@
     <input type="hidden" id="employee" name="employee" value="<%=request.getParameter("employee")%>"/>
     <div class="row">
         <div class="col-25">
+            <span style="color: red">*</span>
             <label for="startTime">start time</label>
         </div>
         <div class="col-75">
@@ -28,6 +29,7 @@
     </div>
     <div class="row">
         <div class="col-25">
+            <span style="color: red">*</span>
             <label for="endTime">end time</label>
         </div>
         <div class="col-75">
@@ -36,6 +38,7 @@
     </div>
     <div class="row">
         <div class="col-25">
+            <span style="color: red">*</span>
             <label for="dayAmount">day amount</label>
         </div>
         <div class="col-75">
@@ -51,7 +54,26 @@
 <script>
     $('#alert-info').hide();
 
+    function validate(){
+        var result = true;
+        if($("#startTime").val() == null || $("#startTime").val()=="") {
+            alert("start time must be present, please enter start time");
+            result = false;
+        }
+        if($("#endTime").val() == null || $("#endTime").val()=="") {
+            alert("end time must be present, please enter end time");
+            result = false;
+        }
+        if($("#dayAmount").val() == null || $("#dayAmount").val()=="") {
+            alert("day amount must be present, please enter day amount");
+            result = false;
+        }
+        return result;
+    }
+
     $('#save').click(function () {
+        if(!validate())
+            return;
         $.ajax({
             url: '/time-off-request-controller',
             type: 'POST',

@@ -1,10 +1,10 @@
-<%@ page import="com.dotin.timeOffRequest.entity.Employee" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
 <%@ page import="com.dotin.timeOffRequest.service.TimeOffRequestService" %>
-<%@ page import="com.dotin.timeOffRequest.entity.TimeOffRequest" %>
 <%@ page import="com.dotin.timeOffRequest.service.CategoryElementService" %>
-<%@ page import="com.dotin.timeOffRequest.entity.CategoryElement" %>
+<%@ page import="com.dotin.timeOffRequest.dto.EmployeeDto" %>
+<%@ page import="com.dotin.timeOffRequest.dto.TimeOffRequestDto" %>
+<%@ page import="com.dotin.timeOffRequest.dto.CategoryElementDto" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -21,7 +21,7 @@
 </header>
 <%
     EmployeeService employeeService = new EmployeeService();
-    List<Employee> employees = employeeService.findAll();
+    List<EmployeeDto> employees = employeeService.findAll();
 %>
 <div class="container" style="width: 491.37px;">
     <form action="/jsp/timeOffRequest.jsp" method="post">
@@ -32,7 +32,7 @@
             <div class="col-75">
                 <%
                     if (request.getParameter("employee") != null) {
-                        Employee employee = employeeService.findById(Long.valueOf(request.getParameter("employee")));
+                        EmployeeDto employee = employeeService.findById(Long.valueOf(request.getParameter("employee")));
                 %>
                 <select id="employee" name="employee" value="<%=employee.getId()%>">
                         <%
@@ -44,11 +44,11 @@
                         %>
                         <option></option>
                         <%
-                            Employee selectedEmployee = null;
+                            EmployeeDto selectedEmployee = null;
                             if (request.getParameter("employee") != null) {
                                 selectedEmployee = employeeService.findById(Long.valueOf(request.getParameter("employee")));
                             }
-                            for (Employee employee : employees) {
+                            for (EmployeeDto employee : employees) {
                                 if (employee.equals(selectedEmployee)) {
                         %>
                         <option value="<%=employee.getId()%>"
@@ -76,7 +76,7 @@
 <%
     if (request.getParameter("employee") != null) {
         TimeOffRequestService timeOffRequestService = new TimeOffRequestService();
-        List<TimeOffRequest> timeOffRequestList = timeOffRequestService.findAllById("employee.id", Long.valueOf(request.getParameter("employee")));
+        List<TimeOffRequestDto> timeOffRequestList = timeOffRequestService.findAllById("employee.id", Long.valueOf(request.getParameter("employee")));
         CategoryElementService categoryElementService = new CategoryElementService();
 %>
 <table>
@@ -95,7 +95,7 @@
 
 
     <%
-        for (TimeOffRequest timeOffRequest : timeOffRequestList) {
+        for (TimeOffRequestDto timeOffRequest : timeOffRequestList) {
     %>
     <tr>
         <td><%=timeOffRequest.getId()%>
@@ -103,7 +103,7 @@
         <td><%=timeOffRequest.getEndTime()%>
         <td><%=timeOffRequest.getTimeOffDayAmount()%>
                 <%
-          CategoryElement timeOffStatus = categoryElementService.findById(timeOffRequest.getTimeOffStatus().getId());
+          CategoryElementDto timeOffStatus = categoryElementService.findById(timeOffRequest.getTimeOffStatusId());
         %>
         <td><%=timeOffStatus.getName()%>
                 <%

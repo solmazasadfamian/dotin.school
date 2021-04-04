@@ -1,8 +1,6 @@
 package com.dotin.timeOffRequest.controller;
 
-import com.dotin.timeOffRequest.entity.CategoryElement;
-import com.dotin.timeOffRequest.entity.Employee;
-import com.dotin.timeOffRequest.service.CategoryElementService;
+import com.dotin.timeOffRequest.dto.EmployeeDto;
 import com.dotin.timeOffRequest.service.EmployeeService;
 import org.apache.log4j.Logger;
 
@@ -16,8 +14,7 @@ import java.io.PrintWriter;
 @WebServlet("/employee-controller")
 public class EmployeeController extends HttpServlet {
     private final static Logger log = Logger.getLogger(EmployeeController.class.getName());
-    private EmployeeService employeeService = new EmployeeService();
-    private CategoryElementService categoryElementService = new CategoryElementService();
+    private final EmployeeService employeeService = new EmployeeService();
 
     public EmployeeController() {
         super();
@@ -29,30 +26,26 @@ public class EmployeeController extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        Employee employee = new Employee();
+        EmployeeDto employeeDto = new EmployeeDto();
         if (request.getParameter("id") != null)
-            employee.setId(Long.valueOf(request.getParameter("id")));
-        employee.setFirstName(request.getParameter("firstName"));
-        employee.setLastName(request.getParameter("lastName"));
-        employee.setNationalCode(request.getParameter("nationalCode"));
-        employee.setPhoneNumber(request.getParameter("phoneNumber"));
-        employee.setAddress(request.getParameter("address"));
-        employee.setEmailAddress(request.getParameter("emailAddress"));
+            employeeDto.setId(Long.valueOf(request.getParameter("id")));
+        employeeDto.setFirstName(request.getParameter("firstName"));
+        employeeDto.setLastName(request.getParameter("lastName"));
+        employeeDto.setNationalCode(request.getParameter("nationalCode"));
+        employeeDto.setPhoneNumber(request.getParameter("phoneNumber"));
+        employeeDto.setAddress(request.getParameter("address"));
+        employeeDto.setEmailAddress(request.getParameter("emailAddress"));
         if (request.getParameter("manager") != null && !request.getParameter("manager").isEmpty()) {
-            Long managerId = Long.valueOf(request.getParameter("manager"));
-            Employee manager = employeeService.findById(managerId);
-            employee.setManager(manager != null ? manager : null);
+            employeeDto.setManagerId(Long.valueOf(request.getParameter("manager")));
         }
         if (request.getParameter("role") != null) {
-            Long roleId = Long.valueOf(request.getParameter("role"));
-            CategoryElement role = categoryElementService.findById(roleId);
-            employee.setRole(role != null ? role : null);
+            employeeDto.setRoleId(Long.valueOf(request.getParameter("role")));
         }
 
-        if (employee.getId() == null) {
-            employeeService.add(employee);
+        if (employeeDto.getId() == null) {
+            employeeService.add(employeeDto);
         } else {
-            employeeService.update(employee);
+            employeeService.update(employeeDto);
         }
         response.sendRedirect("/jsp/employeeTable.jsp");
     }

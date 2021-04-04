@@ -1,8 +1,8 @@
-<%@ page import="com.dotin.timeOffRequest.entity.CategoryElement" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
-<%@ page import="com.dotin.timeOffRequest.entity.Employee" %>
 <%@ page import="com.dotin.timeOffRequest.service.CategoryElementService" %>
+<%@ page import="com.dotin.timeOffRequest.dto.CategoryElementDto" %>
+<%@ page import="com.dotin.timeOffRequest.dto.EmployeeDto" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -16,10 +16,10 @@
 </header>
 <%
     CategoryElementService categoryElementServiceT = new CategoryElementService();
-    List<CategoryElement> categoryElementList = categoryElementServiceT.findAll();
+    List<CategoryElementDto> categoryElementList = categoryElementServiceT.findAll();
     EmployeeService employeeServiceT = new EmployeeService();
-    List<Employee> employees = employeeServiceT.findAll();
-    Employee employee = employeeServiceT.findById(Long.valueOf(request.getParameter("id")));
+    List<EmployeeDto> employees = employeeServiceT.findAll();
+    EmployeeDto employee = employeeServiceT.findById(Long.valueOf(request.getParameter("id")));
 %>
 <div class="container" style="width: 491.37px;">
     <form action="/employee-controller" method="post">
@@ -57,7 +57,7 @@
             <div class="col-75">
                 <select id="role" name="role">
                     <%
-                        for (CategoryElement categoryElement : categoryElementList) {
+                        for (CategoryElementDto categoryElement : categoryElementList) {
                     %>
                     <option value="<%=categoryElement.getId()%>"><%=categoryElement.getName()%>
                     </option>
@@ -95,7 +95,7 @@
                 <select id="manager" name="manager">
                     <option></option>
                     <%
-                        for (Employee manager : employees) {
+                        for (EmployeeDto manager : employees) {
                     %>
                     <option value="<%=manager.getId()%>"><%=manager.getFirstName()%>&nbsp;<%=manager.getLastName()%>
                     </option>

@@ -1,7 +1,7 @@
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
-<%@ page import="com.dotin.timeOffRequest.entity.Employee" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
+<%@ page import="com.dotin.timeOffRequest.dto.EmployeeDto" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -17,7 +17,7 @@
 </header>
 <%
     EmployeeService employeeServiceT = new EmployeeService();
-    List<Employee> employees = employeeServiceT.findAll();
+    List<EmployeeDto> employees = employeeServiceT.findAll();
 %>
 
 <table>
@@ -33,7 +33,7 @@
     </thead>
     <tbody>
     <%
-        for (Employee employee : employees) {
+        for (EmployeeDto employee : employees) {
     %>
     <tr>
         <td><%=employee.getId()%>
