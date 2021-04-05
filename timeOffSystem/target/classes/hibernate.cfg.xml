@@ -8,11 +8,11 @@
 
     <session-factory>
         <property name="hbm2ddl.auto">none</property>
-        <property name="dialect">org.hibernate.dialect.Oracle12cDialect</property>
-        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
-        <property name="connection.username">admin</property>
-        <property name="connection.password">oracle</property>
-        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/timeOffSystem?serverTimezone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="connection.pool_size">5</property>
         <mapping class="com.dotin.timeOffRequest.entity.Attachment"/>

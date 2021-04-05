@@ -116,8 +116,7 @@
                 <%
         }else {
                 %>
-        <td>
-            <a href="/time-off-request-controller?employee=<%=request.getParameter("employee")%>&action=del&id=<%=timeOffRequest.getId()%>">DELETE</a>
+        
                 <%
         }
             }

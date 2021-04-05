@@ -38,6 +38,8 @@
     </p>
     <p>email address: <%=employeeDto.getAddress()%>
     </p>
+    <p>time off balance: <%=employeeDto.getTimeOffBalance()%>
+    </p>
     <%
         if (employeeDto.getManagerId() != null) {
             EmployeeMapper employeeMapper = new EmployeeMapper();
@@ -47,9 +49,12 @@
     <p>manager: <%=employee.getManager().getFirstName()%> <%=employee.getManager().getLastName()%>
     </p>
     <%
-    } else
+    } else{
     %>
     <p>manager: null</p>
+    <%
+        }
+    %>
 </div>
 <footer>
     <%@include file="footer.jsp" %>

@@ -69,13 +69,6 @@
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.7" level="project" />
     <orderEntry type="library" name="Maven: org.jvnet.staxex:stax-ex:1.8" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.15" level="project" />
-    <orderEntry type="library" name="Maven: com.oracle.database.jdbc:ojdbc6:11.2.0.4" level="project" />
-    <orderEntry type="library" name="Maven: com.oracle.database.jdbc:ucp:11.2.0.4" level="project" />
-    <orderEntry type="library" name="Maven: com.oracle.database.security:oraclepki:11.2.0.4" level="project" />
-    <orderEntry type="library" name="Maven: com.oracle.database.security:osdt_cert:11.2.0.4" level="project" />
-    <orderEntry type="library" name="Maven: com.oracle.database.security:osdt_core:11.2.0.4" level="project" />
-    <orderEntry type="library" name="Maven: com.oracle.database.ha:simplefan:11.2.0.4" level="project" />
-    <orderEntry type="library" name="Maven: com.oracle.database.ha:ons:11.2.0.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jsp-api:2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.4" level="project" />
@@ -95,6 +88,8 @@
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.2" level="project" />
     <orderEntry type="library" name="Maven: javax.mail:mail:1.4" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.19" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
   </component>
   <component name="sonarModuleSettings">
     <option name="alternativeWorkingDirPath" value="" />
