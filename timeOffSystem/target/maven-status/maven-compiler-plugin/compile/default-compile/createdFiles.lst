@@ -8,6 +8,7 @@ com\dotin\timeOffRequest\service\EmailService.class
 com\dotin\timeOffRequest\mapper\EmployeeMapper.class
 com\dotin\timeOffRequest\controller\TimeOffRequestController.class
 com\dotin\timeOffRequest\dto\EmailDto.class
+com\dotin\timeOffRequest\exception\ErrorMessages.class
 com\dotin\timeOffRequest\dto\AttachmentDto.class
 com\dotin\timeOffRequest\dao\TimeOffRequestDao.class
 com\dotin\timeOffRequest\dao\CategoryDao.class

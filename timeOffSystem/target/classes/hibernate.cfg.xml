@@ -14,7 +14,13 @@
         <property name="connection.password">root</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.current_session_context_class">thread</property>
-        <property name="connection.pool_size">5</property>
+        <property name="hibernate.hbm2ddl.charset_name">UTF-8</property>
+        <property name="initialPoolSize">5</property>
+        <property name="maxPoolSize">50</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxIdleTime">3000</property>
+        <property name="connection.pool_size">500</property>
+        <property name="javax.persistence.schema-generation.scripts.create-target">import.sql</property>
         <mapping class="com.dotin.timeOffRequest.entity.Attachment"/>
         <mapping class="com.dotin.timeOffRequest.entity.Category"/>
         <mapping class="com.dotin.timeOffRequest.entity.CategoryElement"/>

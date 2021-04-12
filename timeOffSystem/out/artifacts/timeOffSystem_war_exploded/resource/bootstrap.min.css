@@ -1680,7 +1680,7 @@ dd {
 
 @media (min-width:768px) {
     .dl-horizontal dt {
-        float: left;
+        float: right;
         width: 160px;
         overflow: hidden;
         clear: left;
@@ -1851,7 +1851,7 @@ pre code {
 }
 
 .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    float: left
+    float: right;
 }
 
 .col-xs-12 {
@@ -2060,7 +2060,7 @@ pre code {
 
 @media (min-width:768px) {
     .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
-        float: left
+        float: right;
     }
 
     .col-sm-12 {
@@ -2270,7 +2270,7 @@ pre code {
 
 @media (min-width:992px) {
     .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
-        float: left
+        float: right;
     }
 
     .col-md-12 {
@@ -2480,7 +2480,7 @@ pre code {
 
 @media (min-width:1200px) {
     .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
-        float: left
+        float: right
     }
 
     .col-lg-12 {
@@ -3705,7 +3705,7 @@ tbody.collapse.in {
     left: 0;
     z-index: 1000;
     display: none;
-    float: left;
+    float: right;
     min-width: 160px;
     padding: 5px 0;
     margin: 2px 0 0;
@@ -3849,7 +3849,7 @@ tbody.collapse.in {
 
 .btn-group-vertical>.btn, .btn-group>.btn {
     position: relative;
-    float: left
+    float: right
 }
 
 .btn-group-vertical>.btn.active, .btn-group-vertical>.btn:active, .btn-group-vertical>.btn:focus, .btn-group-vertical>.btn:hover, .btn-group>.btn.active, .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
@@ -3865,7 +3865,7 @@ tbody.collapse.in {
 }
 
 .btn-toolbar .btn-group, .btn-toolbar .input-group {
-    float: left
+    float: right
 }
 
 .btn-toolbar>.btn, .btn-toolbar>.btn-group, .btn-toolbar>.input-group {
@@ -3891,7 +3891,7 @@ tbody.collapse.in {
 }
 
 .btn-group>.btn-group {
-    float: left
+    float: right
 }
 
 .btn-group>.btn-group:not(:first-child):not(:last-child)>.btn {
@@ -4033,7 +4033,7 @@ tbody.collapse.in {
 .input-group .form-control {
     position: relative;
     z-index: 2;
-    float: left;
+    float: right;
     width: 100%;
     margin-bottom: 0
 }
@@ -4286,7 +4286,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 }
 
 .nav-pills>li {
-    float: left
+    float: right
 }
 
 .nav-pills>li>a {
@@ -4395,7 +4395,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 
 @media (min-width:768px) {
     .navbar-header {
-        float: left
+        float: right
     }
 }
 
@@ -4520,7 +4520,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 
 .navbar-toggle {
     position: relative;
-    float: left;
+    float: right;
     padding: 9px 10px;
     margin-top: 8px;
     margin-right: 15px;
@@ -4589,13 +4589,13 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 
 @media (min-width:768px) {
     .navbar-nav {
-        float: left;
+        float: right;
         margin: 0
 
     }
 
     .navbar-nav>li {
-        float: left;
+        float: right;
         vertical-align: top;
         border-right: 1px solid #E5E5E5;
     }
@@ -4735,7 +4735,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 
 @media (min-width:768px) {
     .navbar-text {
-        float: left;
+        float: right;
         margin-right: 15px;
         margin-left: 15px
     }
@@ -4743,7 +4743,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 
 @media (min-width:768px) {
     .navbar-left {
-        float: left !important
+        float: right !important
     }
 
     .navbar-right {
@@ -5000,7 +5000,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 
 .pagination>li>a, .pagination>li>span {
     position: relative;
-    float: left;
+    float: right;
     padding: 6px 12px;
     margin-left: -1px;
     line-height: 1.42857143;
@@ -5101,7 +5101,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 }
 
 .pager .previous>a, .pager .previous>span {
-    float: left
+    float: right
 }
 
 .pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span {
@@ -5438,7 +5438,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 }
 
 .progress-bar {
-    float: left;
+    float: right;
     width: 0;
     height: 100%;
     font-size: 12px;
@@ -6790,7 +6790,7 @@ button.close {
 }
 
 .pull-left {
-    float: left !important
+    float: right !important
 }
 
 .hide {

@@ -24,6 +24,7 @@ public class EmployeeController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("request with below info has received : " + request.getParameter("firstName"));
         request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         EmployeeDto employeeDto = new EmployeeDto();
@@ -54,9 +55,22 @@ public class EmployeeController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("request with below id has received : " + request.getParameter("id"));
         request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
         if (action.equals("del")) {
             employeeService.delete(Long.valueOf(request.getParameter("id")));
+            response.sendRedirect("/jsp/employeeTable.jsp");
+        }
+        if (action.equals("disable")) {
+            EmployeeDto employeeDto = employeeService.findById(Long.valueOf(request.getParameter("id")));
+            employeeDto.setDisabled(true);
+            employeeService.update(employeeDto);
+            response.sendRedirect("/jsp/employeeTable.jsp");
+        }
+        if (action.equals("active")) {
+            EmployeeDto employeeDto = employeeService.findById(Long.valueOf(request.getParameter("id")));
+            employeeDto.setDisabled(false);
+            employeeService.update(employeeDto);
             response.sendRedirect("/jsp/employeeTable.jsp");
         }
     }

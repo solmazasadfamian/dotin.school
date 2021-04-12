@@ -6,6 +6,8 @@ import com.dotin.timeOffRequest.dto.TimeOffRequestDto;
 import com.dotin.timeOffRequest.entity.CategoryElement;
 import com.dotin.timeOffRequest.entity.Employee;
 import com.dotin.timeOffRequest.entity.TimeOffRequest;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class TimeOffRequestMapper {
     private final CategoryElementDao categoryElementDao;
@@ -20,21 +22,44 @@ public class TimeOffRequestMapper {
         TimeOffRequest timeOffRequest = new TimeOffRequest();
         timeOffRequest.setId(timeOffRequestDto.getId());
         if (timeOffRequestDto.getTimeOffStatusId() != null) {
-            categoryElementDao.openCurrentSessionWithTransaction();
-            CategoryElement status = categoryElementDao.getEntity(timeOffRequestDto.getTimeOffStatusId());
-            categoryElementDao.closeCurrentSessionWithTransaction();
-            timeOffRequest.setTimeOffStatus(status);
+            Session session = categoryElementDao.openCurrentSession();
+            try {
+                Transaction transaction = session.beginTransaction();
+                CategoryElement status = categoryElementDao.getEntity(timeOffRequestDto.getTimeOffStatusId());
+                timeOffRequest.setTimeOffStatus(status);
+                transaction.commit();
+            } finally {
+                session.close();
+            }
         }
         timeOffRequest.setTimeOffDayAmount(timeOffRequestDto.getTimeOffDayAmount());
         if (timeOffRequestDto.getEmployeeId() != null) {
-            employeeDao.openCurrentSessionWithTransaction();
-            Employee employee = employeeDao.getEntity(timeOffRequestDto.getEmployeeId());
-            employeeDao.closeCurrentSessionWithTransaction();
-            timeOffRequest.setEmployee(employee);
+            Session session = employeeDao.openCurrentSession();
+            try {
+                Transaction transaction = session.beginTransaction();
+                Employee employee = employeeDao.getEntity(timeOffRequestDto.getEmployeeId());
+                timeOffRequest.setEmployee(employee);
+                transaction.commit();
+            } finally {
+                session.close();
+            }
         }
         timeOffRequest.setActive(timeOffRequestDto.getActive());
-        timeOffRequest.setEndTime(timeOffRequestDto.getEndTime());
+        timeOffRequest.setEndDate(timeOffRequestDto.getEndDate());
+        timeOffRequest.setStartDate(timeOffRequestDto.getStartDate());
         timeOffRequest.setStartTime(timeOffRequestDto.getStartTime());
+        timeOffRequest.setEndTime(timeOffRequestDto.getEndTime());
+        if (timeOffRequestDto.getDateTime() != null) {
+            Session session = categoryElementDao.openCurrentSession();
+            try {
+                Transaction transaction = session.beginTransaction();
+                CategoryElement dateTime = categoryElementDao.getEntity(timeOffRequestDto.getDateTime());
+                timeOffRequest.setDateTime(dateTime);
+                transaction.commit();
+            } finally {
+                session.close();
+            }
+        }
         timeOffRequest.setDisabled(timeOffRequestDto.getDisabled());
         timeOffRequest.setVersion(timeOffRequestDto.getVersion());
         return timeOffRequest;
@@ -48,6 +73,9 @@ public class TimeOffRequestMapper {
         timeOffRequestDto.setEmployeeId(timeOffRequest.getEmployee() != null ? timeOffRequest.getEmployee().getId() : null);
         timeOffRequestDto.setEndTime(timeOffRequest.getEndTime());
         timeOffRequestDto.setStartTime(timeOffRequest.getStartTime());
+        timeOffRequestDto.setStartDate(timeOffRequest.getStartDate());
+        timeOffRequestDto.setEndDate(timeOffRequest.getEndDate());
+        timeOffRequestDto.setDateTime(timeOffRequest.getDateTime() != null ? timeOffRequest.getDateTime().getId() : null);
         timeOffRequestDto.setTimeOffDayAmount(timeOffRequest.getTimeOffDayAmount());
         timeOffRequestDto.setTimeOffStatusId(timeOffRequest.getTimeOffStatus() != null ? timeOffRequest.getTimeOffStatus().getId() : null);
         timeOffRequestDto.setVersion(timeOffRequest.getVersion());

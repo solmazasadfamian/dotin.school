@@ -4,6 +4,8 @@ import com.dotin.timeOffRequest.dao.EmailDao;
 import com.dotin.timeOffRequest.dto.AttachmentDto;
 import com.dotin.timeOffRequest.entity.Attachment;
 import com.dotin.timeOffRequest.entity.Email;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class AttachmentMapper {
     private final EmailDao emailDao;
@@ -17,10 +19,15 @@ public class AttachmentMapper {
         attachment.setId(attachmentDto.getId());
         attachment.setFileName(attachmentDto.getFileName());
         if (attachmentDto.getEmailId() != null) {
-            emailDao.openCurrentSessionWithTransaction();
-            Email email = emailDao.getEntity(attachmentDto.getEmailId());
-            emailDao.closeCurrentSessionWithTransaction();
-            attachment.setEmail(email);
+            Session session = emailDao.openCurrentSession();
+            try {
+                Transaction transaction = session.beginTransaction();
+                Email email = emailDao.getEntity(attachmentDto.getEmailId());
+                transaction.commit();
+                attachment.setEmail(email);
+            } finally {
+                session.close();
+            }
         }
         attachment.setDisabled(attachmentDto.getDisabled());
         attachment.setActive(attachmentDto.getActive());

@@ -29,7 +29,7 @@
     <form action="/jsp/checkTimeOff.jsp" method="post">
         <div class="row">
             <div class="col-25">
-                <label for="employee">manager</label>
+                <label for="employee">مدیر</label>
             </div>
             <div class="col-75">
                 <%
@@ -69,8 +69,8 @@
                     </select>
             </div>
         </div>
-        <div class="row">
-            <input type="submit" value="SELECT">
+        <div class="row" style="float: left">
+            <input type="submit" value="انتخاب">
         </div>
     </form>
 </div>
@@ -84,13 +84,15 @@
 <table>
     <thead>
     <tr>
-        <th>ID
-        <th>first name
-        <th>last name
-        <th>start time
-        <th>end time
-        <th>day amount
-        <th>status
+        <th>ردیف
+        <th>نام
+        <th>نام خانوادگی
+        <th>تاریخ شروع
+        <th>تاریخ پایان
+        <th>تعداد روز
+        <th>ساعت شروع
+        <th>ساعت پایان
+        <th>وضعیت
         <th>
         <th>
         <th>
@@ -99,38 +101,61 @@
 
 
     <%
+        int rowIndex = 0;
         for (TimeOffRequestDto timeOffRequestDto : timeOffRequestList) {
             TimeOffRequestMapper timeOffRequestMapper = new TimeOffRequestMapper();
             TimeOffRequest timeOffRequest = timeOffRequestMapper.toEntity(timeOffRequestDto);
+            rowIndex++;
+
 
     %>
     <tr>
-        <td><%=timeOffRequest.getId()%>
+        <td><%=rowIndex%>
         <td><%=timeOffRequest.getEmployee().getFirstName()%>
         <td><%=timeOffRequest.getEmployee().getLastName()%>
-        <td><%=timeOffRequest.getStartTime()%>
-        <td><%=timeOffRequest.getEndTime()%>
+        <td><%=timeOffRequest.getStartDate()%>
+        <td><%=timeOffRequest.getEndDate()%>
         <td><%=timeOffRequest.getTimeOffDayAmount()%>
+            <%
+            if (timeOffRequest.getStartTime()!= null){
+        %>
+        <td><%=timeOffRequest.getStartTime()%>
+                <%
+            }else {
+        %>
+        <td>-
+                <%
+            }
+        %>
+                <%
+            if (timeOffRequest.getEndTime()!=null){
+        %>
+        <td><%=timeOffRequest.getEndTime()%>
+                <%
+            }else {
+        %>
+        <td>-
+                <%
+            }
+        %>
                 <%
           CategoryElementDto timeOffStatus = categoryElementService.findById(timeOffRequest.getTimeOffStatus().getId());
         %>
         <td><%=timeOffStatus.getName()%>
 
         <td>
-            <a href="/time-off-request-controller?employee=<%=request.getParameter("employee")%>&action=approve&id=<%=timeOffRequest.getId()%>">APPROVE</a>
+            <a href="/time-off-request-controller?employee=<%=request.getParameter("employee")%>&action=approve&id=<%=timeOffRequest.getId()%>">تایید</a>
         <td>
-            <a href="/time-off-request-controller?employee=<%=request.getParameter("employee")%>&action=reject&id=<%=timeOffRequest.getId()%>">REJECT</a>
+            <a href="/time-off-request-controller?employee=<%=request.getParameter("employee")%>&action=reject&id=<%=timeOffRequest.getId()%>">عدم تایید</a>
 
                 <%
         }
      %>
-
     </tbody>
 </table>
 <%
     }
 %>
-
 <footer>
     <%@include file="footer.jsp" %>
 </footer>

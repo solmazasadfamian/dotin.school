@@ -2,6 +2,7 @@ package com.dotin.timeOffRequest.controller;
 
 import com.dotin.timeOffRequest.dto.AttachmentDto;
 import com.dotin.timeOffRequest.dto.EmailDto;
+import com.dotin.timeOffRequest.exception.ErrorMessages;
 import com.dotin.timeOffRequest.service.AttachmentService;
 import com.dotin.timeOffRequest.service.EmailService;
 import com.dotin.timeOffRequest.service.EmployeeService;
@@ -30,6 +31,7 @@ public class EmailController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("request with below info has received : " + request.getParameter("firstName"));
         request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         EmailDto emailDto = new EmailDto();
@@ -54,7 +56,8 @@ public class EmailController extends HttpServlet {
             attachmentService.add(attachmentDto);
         }
         response.setStatus(200);
-        out.write("<p><strong style=\"text-align: center\">success</strong><br/><span>the request successfully done</span></p>");
+        String message = "<p><span>" + ErrorMessages.SUCCESS_MESSAGE + "</span></p>";
+        out.print(message);
         out.close();
     }
 
@@ -62,6 +65,7 @@ public class EmailController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("request with below id has received : " + request.getParameter("id"));
         request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
         if (action.equals("del")) {
             employeeService.delete(Long.valueOf(request.getParameter("id")));

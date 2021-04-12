@@ -7,6 +7,7 @@
 }
 
 body {
+    direction: rtl;
     background: #105469;
     font-family: 'Open Sans', sans-serif;
 }
@@ -22,12 +23,14 @@ th {
     font-size: 0.85em;
     font-weight: 600;
     padding: 0.5em 1em;
-    text-align: left;
+
 }
 td {
     color: #fff;
     font-weight: 400;
     padding: 0.65em 1em;
+
+
 
 }
 .disabled td {
@@ -39,3 +42,4 @@ tbody tr {
 tbody tr:hover {
     background: #014055;
 }
+a {color: #4ddbff;}

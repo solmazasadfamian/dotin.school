@@ -4,9 +4,12 @@ public class TimeOffRequestDto {
     private Long id;
     private String startTime;
     private String endTime;
+    private String startDate;
+    private String endDate;
     private Integer timeOffDayAmount = 0;
     private Long employeeId;
     private Long timeOffStatusId;
+    private Long dateTime;
     private Boolean disabled = false;
     private Boolean active = true;
     private Integer version;
@@ -35,6 +38,22 @@ public class TimeOffRequestDto {
         this.endTime = endTime;
     }
 
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
+    }
+
     public Integer getTimeOffDayAmount() {
         return timeOffDayAmount;
     }
@@ -57,6 +76,14 @@ public class TimeOffRequestDto {
 
     public void setTimeOffStatusId(Long timeOffStatusId) {
         this.timeOffStatusId = timeOffStatusId;
+    }
+
+    public Long getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(Long dateTime) {
+        this.dateTime = dateTime;
     }
 
     public Boolean getDisabled() {

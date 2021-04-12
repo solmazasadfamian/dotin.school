@@ -2,10 +2,11 @@
 <%@ page import="com.dotin.timeOffRequest.service.EmployeeService" %>
 <%@ page import="com.dotin.timeOffRequest.dto.EmployeeDto" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<html dir="rtl" lang="fa-IR">
 <head>
     <link rel="shortcut icon" href="img/favicon.png">
     <title>emailSaveForm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="../resource/saveForm.css">
     <link rel="stylesheet" type="text/css" href="../resource/header.css">
     <link rel="stylesheet" type="text/css" href="../resource/header.css">
@@ -14,10 +15,11 @@
     <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
     <script src="../resource/dropzone.min.js"></script>
     <link rel="stylesheet" href="../resource/dropzone.min.css">
+    <meta charset="utf-8">
 </head>
 <body>
 <header>
-    <%@include file="header.jsp" %>
+    <%@include file="mailHeader.jsp" %>
 </header>
 
 <%
@@ -25,6 +27,7 @@
     List<EmployeeDto> employees = employeeService.findAll();
 
 %>
+<input type="hidden" id="employee" name="employee" value="<%=request.getParameter("employee")%>"/>
 
 <div class="container" style="width: 491.37px;">
 
@@ -37,26 +40,7 @@
         <div class="row">
             <div class="col-25">
                 <span style="color: red">*</span>
-                <label for="sender">Sender</label>
-            </div>
-            <div class="col-75">
-                <select id="sender" name="sender">
-                    <option></option>
-                    <%
-                        for (EmployeeDto employee : employees) {
-                    %>
-                    <option value="<%=employee.getId()%>"><%=employee.getFirstName()%>&nbsp;<%=employee.getLastName()%>
-                    </option>
-                    <%
-                        }
-                    %>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-25">
-                <span style="color: red">*</span>
-                <label for="receiver">receiver</label>
+                <label for="receiver">گیرنده</label>
             </div>
             <div class="col-75">
                 <select data-placeholder="Begin typing a name to filter..." id="receiver" name="receiver" multiple
@@ -76,7 +60,7 @@
 
         <div class="row">
             <div class="col-25">
-                <label for="subject">subject</label>
+                <label for="subject">موضوع</label>
             </div>
             <div class="col-75">
                 <input type="text" id="subject" name="subject" placeholder="subject..">
@@ -85,7 +69,7 @@
 
         <div class="row">
             <div class="col-25">
-                <label for="description">description</label>
+                <label for="description">توضیحات</label>
             </div>
             <div class="col-75">
                 <textarea id="description" name="description" rows="3" cols="40"></textarea>
@@ -95,7 +79,7 @@
 
         <div class="row">
             <div class="col-25">
-                <label for="uploadFileDrop">myDrop</label>
+                <label for="uploadFileDrop">پیوست</label>
             </div>
             <div class="col-75">
                 <div class="dropzone dz-clickable col-md-12 col-sm-12"
@@ -115,8 +99,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <input type="submit" value="SEND" id="save">
+        <div class="row" style="float: left">
+            <input type="submit" value="ارسال" id="save">
         </div>
 </div>
 </body>
@@ -196,12 +180,8 @@
 
     function validate(){
         var result = true;
-        if($("#sender").val() == null || $("#sender").val()=="") {
-            alert("sender must be present, please enter sender");
-            result = false;
-        }
         if($("#receiver").val() == null || $("#receiver").val()=="") {
-            alert("receiver must be present, please enter receiver");
+            alert("فرستنده را مشخص کنید");
             result = false;
         }
         return result;
@@ -213,7 +193,7 @@
              url: '/email-controller',
              type: 'POST',
              data: {
-                 sender: $("#sender").val(),
+                 sender: <%=request.getParameter("employee")%>,
                  receiver: $("#receiver").val(),
                  description: $("#description").val(),
                  file_name: $("#file_name").val(),

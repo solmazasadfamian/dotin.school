@@ -19,38 +19,63 @@
     EmployeeService employeeServiceT = new EmployeeService();
     List<EmployeeDto> employees = employeeServiceT.findAll();
 %>
-
+<div class="container">
 <table>
     <thead>
     <tr>
-        <th>ID
-        <th>First Name
-        <th>Last Name
-        <th>National Code
+        <th >ردیف
+        <th>نام
+        <th>نام خانوادگی
+        <th>کد ملی
+        <th>وضعیت
         <th>
         <th>
         <th>
     </thead>
     <tbody>
     <%
+        int rowIndex = 0;
         for (EmployeeDto employee : employees) {
+            rowIndex++;
     %>
     <tr>
-        <td><%=employee.getId()%>
+        <td><%=rowIndex%>
         <td><%=employee.getFirstName()%>
         <td><%=employee.getLastName()%>
         <td><%=employee.getNationalCode()%>
-        <td><a href="/jsp/employeeView.jsp?id=<%=employee.getId()%>" target="._top">VIEW</a>
-        <td><a href="/employee-controller?action=del&id=<%=employee.getId()%>">DELETE</a>
-        <td><a href="/jsp/employeeUpdate.jsp?id=<%=employee.getId()%>">UPDATE</a>
+        <%
+            if (employee.getDisabled().equals(false)){
+        %>
+        <td>فعال
+        <%
+            }else {
+        %>
+        <td>غیر فعال
+        <%
+            }
+        %>
+        <td><a href="/jsp/employeeView.jsp?id=<%=employee.getId()%>" target="._top">مشاهده</a>
+        <td><a href="/employee-controller?action=del&id=<%=employee.getId()%>">حذف</a>
+        <td><a href="/jsp/employeeUpdate.jsp?id=<%=employee.getId()%>">ویرایش</a>
+        <%
+            if (employee.getDisabled().equals(false)){
+        %>
+        <td><a href="/employee-controller?action=disable&id=<%=employee.getId()%>">غیر فعالسازی</a>
+        <%
+            }else {
+        %>
+        <td><a href="/employee-controller?action=active&id=<%=employee.getId()%>">فعالسازی</a>
+
                 <%
+                }
             }
     %>
     </tbody>
 </table>
 <button onclick="window.location.href = 'employeeSaveForm.jsp';"
-        style="margin-left: 20px; color: white; background-color: #3c1a64; padding: 7px">INSERT EMPLOYEE
+        style="margin-right: 15px; color: white; background-color: #3c1a64; padding: 7px; ">اضافه کردن کارمند جدید
 </button>
+</div>
 <footer>
     <%@include file="footer.jsp" %>
 </footer>

@@ -2,7 +2,7 @@ package com.dotin.timeOffRequest.dto;
 
 public class EmployeeDto {
     private Long id;
-    private Integer timeOffBalance = 30;
+    private double timeOffBalance = 240;
     private String firstName;
     private String lastName;
     private String nationalCode;
@@ -14,6 +14,7 @@ public class EmployeeDto {
     private Boolean disabled = false;
     private Boolean active = true;
     private Long version;
+    private String status = "فعال";
 
     public Long getId() {
         return id;
@@ -23,11 +24,11 @@ public class EmployeeDto {
         this.id = id;
     }
 
-    public Integer getTimeOffBalance() {
+    public double getTimeOffBalance() {
         return timeOffBalance;
     }
 
-    public void setTimeOffBalance(Integer timeOffBalance) {
+    public void setTimeOffBalance(double timeOffBalance) {
         this.timeOffBalance = timeOffBalance;
     }
 
@@ -117,6 +118,14 @@ public class EmployeeDto {
 
     public void setVersion(Long version) {
         this.version = version;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     @Override

@@ -28,7 +28,7 @@ body {
 
 /* Style the topnav links */
 .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -52,7 +52,7 @@ body {
 
 /* Right column */
 /*.rightcolumn {
-    float: left;
+    float: right;
     width: 25%;
     background-color: #6f6a6a;
     padding-left: 20px;

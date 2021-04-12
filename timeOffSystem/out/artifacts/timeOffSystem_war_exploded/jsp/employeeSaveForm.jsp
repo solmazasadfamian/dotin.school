@@ -31,28 +31,28 @@
         <div class="row">
             <div class="col-25">
                 <span style="color: red">*</span>
-                <label for="fname">First Name</label>
+                <label for="fname">نام</label>
             </div>
             <div class="col-75">
-                <input type="text" id="fname" name="firstName" placeholder="Your name..">
+                <input type="text" id="fname" name="firstName" placeholder="نام شما...">
             </div>
         </div>
         <div class="row">
             <div class="col-25">
                 <span style="color: red">*</span>
-                <label for="lname">Last Name</label>
+                <label for="lname">نام خانوادگی</label>
             </div>
             <div class="col-75">
-                <input type="text" id="lname" name="lastName" placeholder="Your last name..">
+                <input type="text" id="lname" name="lastName" placeholder="نام خانوادگی شما...">
             </div>
         </div>
         <div class="row">
             <div class="col-25">
                 <span style="color: red">*</span>
-                <label for="nationalCode">National Code</label>
+                <label for="nationalCode">کد ملی</label>
             </div>
             <div class="col-75">
-                <input type="text" id="nationalCode" name="nationalCode" placeholder="National code..">
+                <input type="text" id="nationalCode" name="nationalCode" placeholder="کد ملی  شما...">
             </div>
 
         </div>
@@ -60,7 +60,7 @@
         <div class="row">
             <div class="col-25">
                 <span style="color: red">*</span>
-                <label for="role">Role</label>
+                <label for="role">نقش</label>
             </div>
             <div class="col-75">
                 <select id="role" name="role">
@@ -78,26 +78,26 @@
 
         <div class="row">
             <div class="col-25">
-                <label for="phoneNumber">Phone number</label>
+                <label for="phoneNumber">شماره همراه</label>
             </div>
             <div class="col-75">
-                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone number..">
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="شماره همراه شما...">
             </div>
 
         </div>
         <div class="row">
             <div class="col-25">
-                <label for="emailAddress">Email address</label>
+                <label for="emailAddress">پست الکترونیک</label>
             </div>
             <div class="col-75">
-                <input type="text" id="emailAddress" name="emailAddress" placeholder="Email Address..">
+                <input type="text" id="emailAddress" name="emailAddress" placeholder="پست الکترونیک شما...">
             </div>
 
         </div>
 
         <div class="row">
             <div class="col-25">
-                <label for="manager">Manager</label>
+                <label for="manager">مدیر</label>
             </div>
             <div class="col-75">
                 <select id="manager" name="manager">
@@ -113,8 +113,8 @@
                 </select>
             </div>
         </div>
-        <div class="row">
-            <input id="save" type="submit" value="SAVE">
+        <div class="row" style="float: left">
+            <input id="save" type="submit" value="ذخیره">
         </div>
 </div>
 </body>

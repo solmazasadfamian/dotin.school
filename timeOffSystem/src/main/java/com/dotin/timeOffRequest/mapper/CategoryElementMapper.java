@@ -4,6 +4,8 @@ import com.dotin.timeOffRequest.dao.CategoryDao;
 import com.dotin.timeOffRequest.dto.CategoryElementDto;
 import com.dotin.timeOffRequest.entity.Category;
 import com.dotin.timeOffRequest.entity.CategoryElement;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class CategoryElementMapper {
     private final CategoryDao categoryDao;
@@ -20,10 +22,15 @@ public class CategoryElementMapper {
         categoryElement.setActive(categoryElementDto.getActive());
         categoryElement.setName(categoryElementDto.getName());
         if (categoryElementDto.getCategoryId() != null) {
-            categoryDao.openCurrentSession();
-            Category category = categoryDao.getEntity(categoryElementDto.getCategoryId());
-            categoryDao.closeCurrentSession();
-            categoryElement.setCategory(category);
+            Session session = categoryDao.openCurrentSession();
+            try {
+                Transaction transaction = session.beginTransaction();
+                Category category = categoryDao.getEntity(categoryElementDto.getCategoryId());
+                categoryElement.setCategory(category);
+                transaction.commit();
+            } finally {
+                session.close();
+            }
         }
         return categoryElement;
     }

@@ -24,21 +24,19 @@
         CategoryElementService categoryElementService = new CategoryElementService();
         CategoryElementDto role = categoryElementService.findById(employeeDto.getRoleId());
     %>
-    <p>id: <%=employeeDto.getId()%>
+    <p>نام :  <%=employeeDto.getFirstName()%>
     </p>
-    <p>fist name: <%=employeeDto.getFirstName()%>
+    <p>نام خانوادگی : <%=employeeDto.getLastName()%>
     </p>
-    <p>last name: <%=employeeDto.getLastName()%>
+    <p>کد ملی : <%=employeeDto.getNationalCode()%>
     </p>
-    <p>national code: <%=employeeDto.getNationalCode()%>
+    <p>نقش : <%=role.getName()%>
     </p>
-    <p>role: <%=role.getName()%>
+    <p>شماره همراه : <%=employeeDto.getPhoneNumber()%>
     </p>
-    <p>phone number: <%=employeeDto.getPhoneNumber()%>
+    <p>پست الکترونیک : <%=employeeDto.getAddress()%>
     </p>
-    <p>email address: <%=employeeDto.getAddress()%>
-    </p>
-    <p>time off balance: <%=employeeDto.getTimeOffBalance()%>
+    <p>مانده مرخصی : <%=employeeDto.getTimeOffBalance()%>
     </p>
     <%
         if (employeeDto.getManagerId() != null) {
@@ -46,12 +44,12 @@
             Employee employee = employeeMapper.toEntity(employeeDto);
 
     %>
-    <p>manager: <%=employee.getManager().getFirstName()%> <%=employee.getManager().getLastName()%>
+    <p>مدیر : <%=employee.getManager().getFirstName()%> <%=employee.getManager().getLastName()%>
     </p>
     <%
     } else{
     %>
-    <p>manager: null</p>
+    <p>مدیر : ندارد</p>
     <%
         }
     %>

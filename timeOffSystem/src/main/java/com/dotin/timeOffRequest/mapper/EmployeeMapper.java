@@ -5,6 +5,8 @@ import com.dotin.timeOffRequest.dao.EmployeeDao;
 import com.dotin.timeOffRequest.dto.EmployeeDto;
 import com.dotin.timeOffRequest.entity.CategoryElement;
 import com.dotin.timeOffRequest.entity.Employee;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class EmployeeMapper {
     private final CategoryElementDao categoryElementDao;
@@ -25,16 +27,26 @@ public class EmployeeMapper {
         employee.setDisabled(employeeDto.getDisabled());
         employee.setActive(employeeDto.getActive());
         if (employeeDto.getRoleId() != null) {
-            categoryElementDao.openCurrentSessionWithTransaction();
-            CategoryElement role = categoryElementDao.getEntity(employeeDto.getRoleId());
-            categoryElementDao.closeCurrentSessionWithTransaction();
-            employee.setRole(role);
+            Session session = categoryElementDao.openCurrentSession();
+            try {
+                Transaction transaction = session.beginTransaction();
+                CategoryElement role = categoryElementDao.getEntity(employeeDto.getRoleId());
+                employee.setRole(role);
+                transaction.commit();
+            } finally {
+                session.close();
+            }
         }
         if (employeeDto.getManagerId() != null) {
-            employeeDao.openCurrentSessionWithTransaction();
-            Employee manager = employeeDao.getEntity(employeeDto.getManagerId());
-            employeeDao.closeCurrentSessionWithTransaction();
-            employee.setManager(manager);
+            Session session = employeeDao.openCurrentSession();
+            try {
+                Transaction transaction = session.beginTransaction();
+                Employee manager = employeeDao.getEntity(employeeDto.getManagerId());
+                employee.setManager(manager);
+                transaction.commit();
+            } finally {
+                session.close();
+            }
         }
         employee.setEmailAddress(employeeDto.getEmailAddress());
         employee.setAddress(employeeDto.getAddress());

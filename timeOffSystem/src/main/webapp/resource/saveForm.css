@@ -2,6 +2,9 @@
     box-sizing: inherit;
 }
 
+body{
+    direction: rtl;
+}
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -36,13 +39,13 @@ input[type=submit]:hover {
 }
 
 .col-25 {
-    float: left;
+    float: right;
     width: 27%;
     margin-top: 6px;
 }
 
 .col-75 {
-    float: left;
+    float: right;
     width: 73%;
     margin-top: 6px;
 }

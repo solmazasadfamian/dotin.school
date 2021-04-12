@@ -4,6 +4,8 @@ import com.dotin.timeOffRequest.dao.EmployeeDao;
 import com.dotin.timeOffRequest.dto.EmailDto;
 import com.dotin.timeOffRequest.entity.Email;
 import com.dotin.timeOffRequest.entity.Employee;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -23,19 +25,31 @@ public class EmailMapper {
         email.setActive(emailDto.getActive());
         email.setDisabled(emailDto.getDisabled());
         if (emailDto.getSenderId() != null) {
-            employeeDao.openCurrentSessionWithTransaction();
-            Employee sender = employeeDao.getEntity(emailDto.getSenderId());
-            employeeDao.closeCurrentSessionWithTransaction();
-            email.setSender(sender);
+            Session session = employeeDao.openCurrentSession();
+            try {
+                Transaction transaction = session.beginTransaction();
+                Employee sender = employeeDao.getEntity(emailDto.getSenderId());
+                email.setSender(sender);
+                transaction.commit();
+            } finally {
+                session.close();
+            }
         }
-        Set<Employee> receiverList = new HashSet<>();
-        for (Long id : emailDto.getReceiverId()) {
-            employeeDao.openCurrentSessionWithTransaction();
-            Employee receiver = employeeDao.getEntity(id);
-            receiverList.add(receiver);
-            employeeDao.closeCurrentSessionWithTransaction();
+        if (emailDto.getReceiverId() != null) {
+            Set<Employee> receiverList = new HashSet<>();
+            Session session = employeeDao.openCurrentSession();
+            Transaction transaction = session.beginTransaction();
+            try {
+                for (Long id : emailDto.getReceiverId()) {
+                    Employee receiver = employeeDao.getEntity(id);
+                    receiverList.add(receiver);
+                }
+                email.setReceiver(receiverList);
+                transaction.commit();
+            } finally {
+                session.close();
+            }
         }
-        email.setReceiver(receiverList);
         return email;
     }
 

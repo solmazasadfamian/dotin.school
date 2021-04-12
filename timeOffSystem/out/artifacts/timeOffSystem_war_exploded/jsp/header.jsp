@@ -17,15 +17,15 @@
 
 <body>
 <div class="header">
-    <h1>TIME OFF SYSTEM</h1>
+    <h1>سیستم مرخصی</h1>
 
 </div>
 <div class="navbar">
-    <a href="/jsp/employeeTable.jsp">employee</a>
-    <a href="/jsp/timeOffRequest.jsp">time off request</a>
-    <a href="/jsp/emailSaveForm.jsp">send email</a>
-    <a href="/jsp/checkTimeOff.jsp">check time off</a>
-    <a href="/jsp/homePage.jsp" style="float: right">HOME</a>
+    <a href="/jsp/employeeTable.jsp" style="float: right">کارمند</a>
+    <a href="/jsp/timeOffRequest.jsp" style="float: right">مرخصی</a>
+    <a href="/jsp/selectEmployeeForMail.jsp" style="float: right">ایمیل</a>
+    <a href="/jsp/checkTimeOff.jsp" style="float: right">بررسی مرخصی</a>
+    <a href="/jsp/homePage.jsp" style="float: left">خانه</a>
 </div>
 <div class="jj"></div>
 </body>

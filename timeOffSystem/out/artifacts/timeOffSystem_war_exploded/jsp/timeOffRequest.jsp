@@ -19,6 +19,8 @@
 <header>
     <%@include file="header.jsp" %>
 </header>
+<input type="hidden" id="employee" name="employee" value="<%=request.getParameter("employee")%>"/>
+
 <%
     EmployeeService employeeService = new EmployeeService();
     List<EmployeeDto> employees = employeeService.findAll();
@@ -27,7 +29,7 @@
     <form action="/jsp/timeOffRequest.jsp" method="post">
         <div class="row">
             <div class="col-25">
-                <label for="employee">employee</label>
+                <label for="employee" style="float: right">کارمند</label>
             </div>
             <div class="col-75">
                 <%
@@ -67,26 +69,29 @@
                     </select>
             </div>
         </div>
-        <div class="row">
-            <input type="submit" value="SELECT">
+        <div class="row" style="float: left">
+            <input type="submit" value="انتخاب">
         </div>
     </form>
 </div>
-
+<div class="container">
 <%
     if (request.getParameter("employee") != null) {
         TimeOffRequestService timeOffRequestService = new TimeOffRequestService();
         List<TimeOffRequestDto> timeOffRequestList = timeOffRequestService.findAllById("employee.id", Long.valueOf(request.getParameter("employee")));
         CategoryElementService categoryElementService = new CategoryElementService();
 %>
+
 <table>
     <thead>
     <tr>
-        <th>ID
-        <th>start time
-        <th>end time
-        <th>day amount
-        <th>status
+        <th>ردیف
+        <th>تاریخ شروع
+        <th>تاریخ پایان
+        <th>تعداد روز
+        <th>ساعت شروع
+        <th>ساعت پایان
+        <th>وضعیت
         <th>
         <th>
         <th>
@@ -95,28 +100,52 @@
 
 
     <%
+        int rowIndex = 0;
         for (TimeOffRequestDto timeOffRequest : timeOffRequestList) {
+            rowIndex++;
     %>
     <tr>
-        <td><%=timeOffRequest.getId()%>
-        <td><%=timeOffRequest.getStartTime()%>
-        <td><%=timeOffRequest.getEndTime()%>
+        <td><%=rowIndex%>
+        <td><%=timeOffRequest.getStartDate()%>
+        <td><%=timeOffRequest.getEndDate()%>
         <td><%=timeOffRequest.getTimeOffDayAmount()%>
+        <%
+            if (timeOffRequest.getStartTime()!= null){
+        %>
+        <td><%=timeOffRequest.getStartTime()%>
+        <%
+            }else {
+        %>
+        <td>-
+        <%
+            }
+        %>
+        <%
+            if (timeOffRequest.getEndTime()!=null){
+        %>
+        <td><%=timeOffRequest.getEndTime()%>
+        <%
+            }else {
+        %>
+        <td>-
+        <%
+            }
+        %>
                 <%
           CategoryElementDto timeOffStatus = categoryElementService.findById(timeOffRequest.getTimeOffStatusId());
         %>
         <td><%=timeOffStatus.getName()%>
                 <%
-            if (timeOffStatus.getName().equals("notapproved")){
+            if (timeOffStatus.getCode()==300){
         %>
         <td>
-            <a href="/time-off-request-controller?employee=<%=request.getParameter("employee")%>&action=del&id=<%=timeOffRequest.getId()%>">DELETE</a>
+            <a href="/time-off-request-controller?employee=<%=request.getParameter("employee")%>&action=del&id=<%=timeOffRequest.getId()%>">حذف</a>
         <td>
-            <a href="/jsp/timeOffRequestUpdate.jsp?employee=<%=request.getParameter("employee")%>&id=<%=timeOffRequest.getId()%>">UPDATE</a>
+            <a href="/jsp/timeOffRequestUpdate.jsp?employee=<%=request.getParameter("employee")%>&id=<%=timeOffRequest.getId()%>">ویرایش</a>
                 <%
         }else {
                 %>
-        
+
                 <%
         }
             }
@@ -124,13 +153,14 @@
 
     </tbody>
 </table>
-<button onclick="window.location.href = 'timeOffRequestSaveForm.jsp?employee=<%=request.getParameter("employee")%>';"
-        style="margin-left: 20px; color: white; background-color: #3c1a64; padding: 7px">INSERT TIME OFF REQUEST
+<button onclick="window.location.href = 'dateTime.jsp?employee=<%=request.getParameter("employee")%>';"
+        style="margin-right: 15px ; color: white; background-color: #3c1a64; padding: 7px">اضافه کردن درخواست جدید
 </button>
 
 <%
     }
 %>
+</div>
 
 <footer>
     <%@include file="footer.jsp" %>

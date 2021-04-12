@@ -2,6 +2,7 @@ package com.dotin.timeOffRequest.controller;
 
 import com.dotin.timeOffRequest.dto.TimeOffRequestDto;
 import com.dotin.timeOffRequest.exception.BadRequestException;
+import com.dotin.timeOffRequest.exception.ErrorMessages;
 import com.dotin.timeOffRequest.service.CategoryElementService;
 import com.dotin.timeOffRequest.service.EmployeeService;
 import com.dotin.timeOffRequest.service.TimeOffRequestService;
@@ -29,25 +30,38 @@ public class TimeOffRequestController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("request with below info has received : " + request.getParameter("employee"));
         request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         TimeOffRequestDto timeOffRequestDto = new TimeOffRequestDto();
         if (request.getParameter("id") != null)
             timeOffRequestDto.setId(Long.valueOf(request.getParameter("id")));
+        if (request.getParameter("startDate") != null)
+            timeOffRequestDto.setStartDate(request.getParameter("startDate"));
+        timeOffRequestDto.setEndDate(request.getParameter("endDate"));
+        if (request.getParameter("date") != null) {
+            timeOffRequestDto.setStartDate(request.getParameter("date"));
+            timeOffRequestDto.setEndDate(request.getParameter("date"));
+        }
         timeOffRequestDto.setStartTime(request.getParameter("startTime"));
         timeOffRequestDto.setEndTime(request.getParameter("endTime"));
-        timeOffRequestDto.setTimeOffDayAmount(Integer.valueOf(request.getParameter("dayAmount")));
+        if (request.getParameter("dayAmount") != null) {
+            timeOffRequestDto.setTimeOffDayAmount(Integer.valueOf(request.getParameter("dayAmount")));
+        }
         if (request.getParameter("employee") != null) {
             timeOffRequestDto.setEmployeeId(Long.valueOf(request.getParameter("employee")));
+        }
+        if (request.getParameter("dateTime") != null) {
+            timeOffRequestDto.setDateTime(Long.valueOf(request.getParameter("dateTime")));
         }
         try {
             timeOffRequestService.preAdd(timeOffRequestDto);
             response.setStatus(200);
-            out.write("<p><strong style=\"text-align: center\">success</strong><br/><span>the request successfully done</span></p>");
+            out.write("<p><span>" + ErrorMessages.SUCCESS_MESSAGE + "</span></p>");
             out.close();
         } catch (BadRequestException e) {
             response.setStatus(400);
-            out.write("<p><strong style=\"text-align: center\">error</strong><br/><span>" + e.getErrorMessage() + "</span></p>");
+            out.write("<p><span>" + e.getErrorMessage() + "</span></p>");
             out.close();
         }
 
@@ -57,6 +71,7 @@ public class TimeOffRequestController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("request with below info has received : " + request.getParameter("action"));
         request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
 
         if (action.equals("del") && request.getParameter("id") != null) {

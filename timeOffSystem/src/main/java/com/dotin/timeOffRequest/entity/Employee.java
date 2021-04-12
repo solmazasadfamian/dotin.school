@@ -8,10 +8,9 @@ import javax.persistence.*;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "c_id")
     private Long id;
-    @Column(name = "timeOffBalance")
-    private Integer timeOffBalance = 30;
+    @Column(name = "c_timeOffBalance")
+    private double timeOffBalance = 240;
     @Column(name = "c_firstName")
     private String firstName;
     @Column(name = "c_lastName")
@@ -25,7 +24,7 @@ public class Employee {
     @Column(name = "c_emailAddress")
     private String emailAddress;
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElement.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "c_role", referencedColumnName = "c_id")
+    @JoinColumn(name = "c_role")
     private CategoryElement role;
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "c_manager")
@@ -134,11 +133,11 @@ public class Employee {
         this.nationalCode = nationalCode;
     }
 
-    public Integer getTimeOffBalance() {
+    public double getTimeOffBalance() {
         return timeOffBalance;
     }
 
-    public void setTimeOffBalance(Integer timeOffBalance) {
+    public void setTimeOffBalance(double timeOffBalance) {
         this.timeOffBalance = timeOffBalance;
     }
 }

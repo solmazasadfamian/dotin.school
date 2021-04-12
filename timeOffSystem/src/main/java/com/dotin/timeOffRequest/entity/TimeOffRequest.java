@@ -7,8 +7,12 @@ import javax.persistence.*;
 public class TimeOffRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "c_id", nullable = false, unique = true)
+    @Column(nullable = false, unique = true)
     private Long id;
+    @Column(name = "c_startDate")
+    private String startDate;
+    @Column(name = "c_endDate")
+    private String endDate;
     @Column(name = "c_startTime")
     private String startTime;
     @Column(name = "c_endTime")
@@ -21,6 +25,9 @@ public class TimeOffRequest {
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElement.class, optional = false)
     @JoinColumn(name = "c_timeOffStatus")
     private CategoryElement timeOffStatus;
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElement.class, optional = false)
+    @JoinColumn(name = "c_dateTime")
+    private CategoryElement dateTime;
     @Column(name = "c_disabled")
     private Boolean disabled = false;
     @Column(name = "c_active")
@@ -35,6 +42,22 @@ public class TimeOffRequest {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(String startTime) {
+        this.startDate = startTime;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(String endTime) {
+        this.endDate = endTime;
     }
 
     public String getStartTime() {
@@ -67,6 +90,14 @@ public class TimeOffRequest {
 
     public void setTimeOffStatus(CategoryElement timeOffStatus) {
         this.timeOffStatus = timeOffStatus;
+    }
+
+    public CategoryElement getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(CategoryElement dateTime) {
+        this.dateTime = dateTime;
     }
 
     public Boolean getDisabled() {

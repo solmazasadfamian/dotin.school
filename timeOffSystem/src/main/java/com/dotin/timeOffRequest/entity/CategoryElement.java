@@ -8,7 +8,7 @@ import javax.persistence.*;
 public class CategoryElement {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "c_id", nullable = false, unique = true)
+    @Column(nullable = false, unique = true)
     private Long id;
     @Column(name = "c_code")
     private Long code;
