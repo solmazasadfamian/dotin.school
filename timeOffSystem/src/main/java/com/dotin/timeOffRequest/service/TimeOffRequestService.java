@@ -61,13 +61,25 @@ public class TimeOffRequestService {
                 employee.setTimeOffBalance(employee.getTimeOffBalance() - (hourDiff + (minuteDiff / 60.0)));
             }
             employeeService.update(employeeMapper.toDto(employee));
+
         } else {
-            Integer beforeTimeOffDay = this.findById(timeOffRequestDto.getId()).getTimeOffDayAmount() * 8;
-            this.update(timeOffRequestDto);
-            employee.setTimeOffBalance((employee.getTimeOffBalance() + beforeTimeOffDay) - timeOffRequestDto.getTimeOffDayAmount() * 8);
+            if (timeOffRequestDto.getDateTime() == 5) {
+                Integer beforeTimeOffDay = this.findById(timeOffRequestDto.getId()).getTimeOffDayAmount() * 8;
+                this.update(timeOffRequestDto);
+                employee.setTimeOffBalance((employee.getTimeOffBalance() + beforeTimeOffDay) - timeOffRequestDto.getTimeOffDayAmount() * 8);
+            } else if (timeOffRequestDto.getDateTime() == 6) {
+                TimeOffRequestDto oldTimeOffRequestDto = this.findById(timeOffRequestDto.getId());
+                Integer oldHourDiff = Integer.valueOf(oldTimeOffRequestDto.getEndTime().split(":")[0]) - Integer.valueOf(oldTimeOffRequestDto.getStartTime().split(":")[0]);
+                Integer oldMinuteDiff = Integer.valueOf(oldTimeOffRequestDto.getEndTime().split(":")[1]) - Integer.valueOf(oldTimeOffRequestDto.getStartTime().split(":")[1]);
+                this.update(timeOffRequestDto);
+                Integer hourDiff = Integer.valueOf(timeOffRequest.getEndTime().split(":")[0]) - Integer.valueOf(timeOffRequest.getStartTime().split(":")[0]);
+                Integer minuteDiff = Integer.valueOf(timeOffRequest.getEndTime().split(":")[1]) - Integer.valueOf(timeOffRequest.getStartTime().split(":")[1]);
+                employee.setTimeOffBalance(employee.getTimeOffBalance() + (oldHourDiff + (oldMinuteDiff / 60.0)) - (hourDiff + (minuteDiff / 60.0)));
+            }
             employeeService.update(employeeMapper.toDto(employee));
         }
     }
+
 
     public TimeOffRequestDto add(TimeOffRequestDto timeOffRequestDto) {
         log.info("object with below info for add has received : " + timeOffRequestDto.getStartTime() + " end time:" + timeOffRequestDto.getEndTime());
@@ -214,9 +226,9 @@ public class TimeOffRequestService {
 
     public void updateEmployeeBalance(TimeOffRequestDto timeOffRequestDto) {
         EmployeeDto employeeDto = employeeService.findById(timeOffRequestDto.getEmployeeId());
-        if (timeOffRequestDto.getDateTime()==5) {
+        if (timeOffRequestDto.getDateTime() == 5) {
             employeeDto.setTimeOffBalance(employeeDto.getTimeOffBalance() + timeOffRequestDto.getTimeOffDayAmount() * 8);
-        }else if (timeOffRequestDto.getDateTime()==6){
+        } else if (timeOffRequestDto.getDateTime() == 6) {
             Integer hourDiff = Integer.valueOf(timeOffRequestDto.getEndTime().split(":")[0]) - Integer.valueOf(timeOffRequestDto.getStartTime().split(":")[0]);
             Integer minuteDiff = Integer.valueOf(timeOffRequestDto.getEndTime().split(":")[1]) - Integer.valueOf(timeOffRequestDto.getStartTime().split(":")[1]);
             employeeDto.setTimeOffBalance(employeeDto.getTimeOffBalance() + (hourDiff + (minuteDiff / 60.0)));
