@@ -3,6 +3,8 @@ package com.dotin.timeOffRequest.service;
 import com.dotin.timeOffRequest.dao.EmployeeDao;
 import com.dotin.timeOffRequest.dto.EmployeeDto;
 import com.dotin.timeOffRequest.entity.Employee;
+import com.dotin.timeOffRequest.exception.BadRequestException;
+import com.dotin.timeOffRequest.exception.ErrorMessages;
 import com.dotin.timeOffRequest.mapper.EmployeeMapper;
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
@@ -28,6 +30,7 @@ public class EmployeeService {
         log.info("object with below info for save has received : " + employeeDto.getFirstName() + " " + employeeDto.getLastName());
         Session session = employeeDao.openCurrentSession();
         try {
+            employeeDto.setTimeOffBalance(240);
             Transaction transaction = session.beginTransaction();
             Employee employee = employeeMapper.toEntity(employeeDto);
             Employee saveEmployee = employeeDao.insert(employee);
@@ -45,6 +48,7 @@ public class EmployeeService {
             Transaction transaction = session.beginTransaction();
             Employee employee = employeeDao.getEntity(employeeDto.getId());
             employeeDto.setVersion(employee.getVersion());
+            employeeDto.setTimeOffBalance(employee.getTimeOffBalance());
             employeeDao.update(employeeMapper.toEntity(employeeDto));
             transaction.commit();
         } finally {
@@ -65,17 +69,18 @@ public class EmployeeService {
         }
     }
 
-    public void delete(Long id) {
+    public void delete(Long id) throws BadRequestException {
         log.info("request with below id for delete has received : " + id);
+        List<EmployeeDto> employeeDtoList = findAllById("manager.id", id);
         Session session = employeeDao.openCurrentSession();
         try {
             Transaction transaction = session.beginTransaction();
-            Employee employee = employeeDao.getEntity(id);
-            employee.setActive(false);
-            List<EmployeeDto> employeeDtoList = findAllById("manager.id", id);
-            for (EmployeeDto employeeDto : employeeDtoList) {
-                employeeDto.setManagerId(null);
-                update(employeeDto);
+            if (employeeDtoList.size() == 0) {
+                Employee employee = employeeMapper.toEntity(findById(id));
+                employee.setActive(false);
+                update(employeeMapper.toDto(employee));
+            } else {
+                throw new BadRequestException(ErrorMessages.MANAGER_DELETE_CODE, ErrorMessages.MANAGER_DELETE_MESSAGE);
             }
             transaction.commit();
         } finally {

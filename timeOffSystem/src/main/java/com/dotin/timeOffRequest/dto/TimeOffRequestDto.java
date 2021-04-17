@@ -9,7 +9,7 @@ public class TimeOffRequestDto {
     private Integer timeOffDayAmount = 0;
     private Long employeeId;
     private Long timeOffStatusId;
-    private Long dateTime;
+    private Long requestType;
     private Boolean disabled = false;
     private Boolean active = true;
     private Integer version;
@@ -78,12 +78,12 @@ public class TimeOffRequestDto {
         this.timeOffStatusId = timeOffStatusId;
     }
 
-    public Long getDateTime() {
-        return dateTime;
+    public Long getRequestType() {
+        return requestType;
     }
 
-    public void setDateTime(Long dateTime) {
-        this.dateTime = dateTime;
+    public void setRequestType(Long requestType) {
+        this.requestType = requestType;
     }
 
     public Boolean getDisabled() {

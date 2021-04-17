@@ -35,6 +35,22 @@ public class TimeOffRequestService {
         employeeMapper = new EmployeeMapper();
     }
 
+    private void validation(Boolean dayOffType, TimeOffRequestDto timeOffRequestDto, Employee employee) throws BadRequestException {
+        Boolean overlapEmployeeTimeOff = getOverlapEmployeeTimeOff(timeOffRequestDto.getStartDate(), timeOffRequestDto.getEndDate(), timeOffRequestDto.getEmployeeId(), timeOffRequestDto.getId(), dayOffType, timeOffRequestDto.getStartTime(), timeOffRequestDto.getEndTime());
+        if (overlapEmployeeTimeOff) {
+            throw new BadRequestException(ErrorMessages.OVERLAP_ERROR_CODE, ErrorMessages.OVERLAP_ERROR_MESSAGE);
+        }
+        if (timeOffRequestDto.getTimeOffDayAmount() * 8 > employee.getTimeOffBalance()) {
+            throw new BadRequestException(ErrorMessages.CAPACITY_ERROR_CODE, ErrorMessages.CAPACITY_ERROR_MESSAGE);
+        }
+    }
+
+    private double calculateTime(String startTime, String endTime) {
+        Integer hourDiff = Integer.valueOf(endTime.split(":")[0]) - Integer.valueOf(startTime.split(":")[0]);
+        Integer minuteDiff = Integer.valueOf(endTime.split(":")[1]) - Integer.valueOf(startTime.split(":")[1]);
+        return (hourDiff + (minuteDiff / 60.0));
+    }
+
     public void preAdd(TimeOffRequestDto timeOffRequestDto) throws BadRequestException {
         log.info("object with below info for save has received : start time: " + timeOffRequestDto.getStartTime() + " end time:" + timeOffRequestDto.getEndTime());
         TimeOffRequest timeOffRequest = timeOffRequestMapper.toEntity(timeOffRequestDto);
@@ -44,37 +60,27 @@ public class TimeOffRequestService {
         Boolean dayOffType = true;
         if (timeOffRequestDto.getStartTime() != null)
             dayOffType = false;
-        Boolean overlapEmployeeTimeOff = getOverlapEmployeeTimeOff(timeOffRequestDto.getStartDate(), timeOffRequestDto.getEndDate(), timeOffRequestDto.getEmployeeId(), timeOffRequestDto.getId(), dayOffType, timeOffRequestDto.getStartTime(), timeOffRequest.getEndTime());
-        if (overlapEmployeeTimeOff) {
-            throw new BadRequestException(ErrorMessages.OVERLAP_ERROR_CODE, ErrorMessages.OVERLAP_ERROR_MESSAGE);
-        }
-        if (timeOffRequestDto.getTimeOffDayAmount() * 8 > employee.getTimeOffBalance()) {
-            throw new BadRequestException(ErrorMessages.CAPACITY_ERROR_CODE, ErrorMessages.CAPACITY_ERROR_MESSAGE);
-        }
+        validation(dayOffType, timeOffRequestDto, employee);
         if (timeOffRequestDto.getId() == null) {
             this.add(timeOffRequestDto);
-            if (timeOffRequestDto.getDateTime() == 5) {
+            if (timeOffRequestDto.getRequestType() == 5) {
                 employee.setTimeOffBalance(employee.getTimeOffBalance() - timeOffRequestDto.getTimeOffDayAmount() * 8);
-            } else if (timeOffRequestDto.getDateTime() == 6) {
-                Integer hourDiff = Integer.valueOf(timeOffRequest.getEndTime().split(":")[0]) - Integer.valueOf(timeOffRequest.getStartTime().split(":")[0]);
-                Integer minuteDiff = Integer.valueOf(timeOffRequest.getEndTime().split(":")[1]) - Integer.valueOf(timeOffRequest.getStartTime().split(":")[1]);
-                employee.setTimeOffBalance(employee.getTimeOffBalance() - (hourDiff + (minuteDiff / 60.0)));
+            } else if (timeOffRequestDto.getRequestType() == 6) {
+                employee.setTimeOffBalance(employee.getTimeOffBalance() - calculateTime(timeOffRequest.getStartTime(), timeOffRequest.getEndTime()));
             }
             employeeService.update(employeeMapper.toDto(employee));
 
         } else {
-            if (timeOffRequestDto.getDateTime() == 5) {
+            if (timeOffRequestDto.getRequestType() == 5) {
                 Integer beforeTimeOffDay = this.findById(timeOffRequestDto.getId()).getTimeOffDayAmount() * 8;
                 this.update(timeOffRequestDto);
                 employee.setTimeOffBalance((employee.getTimeOffBalance() + beforeTimeOffDay) - timeOffRequestDto.getTimeOffDayAmount() * 8);
-            } else if (timeOffRequestDto.getDateTime() == 6) {
+            } else if (timeOffRequestDto.getRequestType() == 6) {
                 TimeOffRequestDto oldTimeOffRequestDto = this.findById(timeOffRequestDto.getId());
-                Integer oldHourDiff = Integer.valueOf(oldTimeOffRequestDto.getEndTime().split(":")[0]) - Integer.valueOf(oldTimeOffRequestDto.getStartTime().split(":")[0]);
-                Integer oldMinuteDiff = Integer.valueOf(oldTimeOffRequestDto.getEndTime().split(":")[1]) - Integer.valueOf(oldTimeOffRequestDto.getStartTime().split(":")[1]);
+                double oldTime = calculateTime(oldTimeOffRequestDto.getStartTime(), oldTimeOffRequestDto.getEndTime());
                 this.update(timeOffRequestDto);
-                Integer hourDiff = Integer.valueOf(timeOffRequest.getEndTime().split(":")[0]) - Integer.valueOf(timeOffRequest.getStartTime().split(":")[0]);
-                Integer minuteDiff = Integer.valueOf(timeOffRequest.getEndTime().split(":")[1]) - Integer.valueOf(timeOffRequest.getStartTime().split(":")[1]);
-                employee.setTimeOffBalance(employee.getTimeOffBalance() + (oldHourDiff + (oldMinuteDiff / 60.0)) - (hourDiff + (minuteDiff / 60.0)));
+                double newTime = calculateTime(timeOffRequest.getStartTime(), timeOffRequest.getEndTime());
+                employee.setTimeOffBalance(employee.getTimeOffBalance() + oldTime - newTime);
             }
             employeeService.update(employeeMapper.toDto(employee));
         }
@@ -131,12 +137,10 @@ public class TimeOffRequestService {
             timeOffRequest.setActive(false);
             timeOffRequest.setDisabled(true);
             Employee employee = timeOffRequest.getEmployee();
-            if (timeOffRequest.getDateTime() != null & timeOffRequest.getDateTime().getCode() == 500) {
+            if (timeOffRequest.getRequestType() != null & timeOffRequest.getRequestType().getCode() == 500) {
                 employee.setTimeOffBalance((employee.getTimeOffBalance()) + ((timeOffRequest.getTimeOffDayAmount() * 8)));
-            } else if (timeOffRequest.getDateTime() != null & timeOffRequest.getDateTime().getCode() == 600) {
-                Integer hourDiff = Integer.valueOf(timeOffRequest.getEndTime().split(":")[0]) - Integer.valueOf(timeOffRequest.getStartTime().split(":")[0]);
-                Integer minuteDiff = Integer.valueOf(timeOffRequest.getEndTime().split(":")[1]) - Integer.valueOf(timeOffRequest.getStartTime().split(":")[1]);
-                employee.setTimeOffBalance(employee.getTimeOffBalance() + (hourDiff + (minuteDiff / 60.0)));
+            } else if (timeOffRequest.getRequestType() != null & timeOffRequest.getRequestType().getCode() == 600) {
+                employee.setTimeOffBalance(employee.getTimeOffBalance() + calculateTime(timeOffRequest.getStartTime(), timeOffRequest.getEndTime()));
             }
             transaction.commit();
             employeeService.update(employeeMapper.toDto(employee));
@@ -226,12 +230,10 @@ public class TimeOffRequestService {
 
     public void updateEmployeeBalance(TimeOffRequestDto timeOffRequestDto) {
         EmployeeDto employeeDto = employeeService.findById(timeOffRequestDto.getEmployeeId());
-        if (timeOffRequestDto.getDateTime() == 5) {
+        if (timeOffRequestDto.getRequestType() == 5) {
             employeeDto.setTimeOffBalance(employeeDto.getTimeOffBalance() + timeOffRequestDto.getTimeOffDayAmount() * 8);
-        } else if (timeOffRequestDto.getDateTime() == 6) {
-            Integer hourDiff = Integer.valueOf(timeOffRequestDto.getEndTime().split(":")[0]) - Integer.valueOf(timeOffRequestDto.getStartTime().split(":")[0]);
-            Integer minuteDiff = Integer.valueOf(timeOffRequestDto.getEndTime().split(":")[1]) - Integer.valueOf(timeOffRequestDto.getStartTime().split(":")[1]);
-            employeeDto.setTimeOffBalance(employeeDto.getTimeOffBalance() + (hourDiff + (minuteDiff / 60.0)));
+        } else if (timeOffRequestDto.getRequestType() == 6) {
+            employeeDto.setTimeOffBalance(employeeDto.getTimeOffBalance() + calculateTime(timeOffRequestDto.getStartTime(), timeOffRequestDto.getEndTime()));
         }
         employeeService.update(employeeDto);
     }

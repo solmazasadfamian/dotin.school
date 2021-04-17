@@ -49,12 +49,12 @@ public class TimeOffRequestMapper {
         timeOffRequest.setStartDate(timeOffRequestDto.getStartDate());
         timeOffRequest.setStartTime(timeOffRequestDto.getStartTime());
         timeOffRequest.setEndTime(timeOffRequestDto.getEndTime());
-        if (timeOffRequestDto.getDateTime() != null) {
+        if (timeOffRequestDto.getRequestType() != null) {
             Session session = categoryElementDao.openCurrentSession();
             try {
                 Transaction transaction = session.beginTransaction();
-                CategoryElement dateTime = categoryElementDao.getEntity(timeOffRequestDto.getDateTime());
-                timeOffRequest.setDateTime(dateTime);
+                CategoryElement dateTime = categoryElementDao.getEntity(timeOffRequestDto.getRequestType());
+                timeOffRequest.setRequestType(dateTime);
                 transaction.commit();
             } finally {
                 session.close();
@@ -75,7 +75,7 @@ public class TimeOffRequestMapper {
         timeOffRequestDto.setStartTime(timeOffRequest.getStartTime());
         timeOffRequestDto.setStartDate(timeOffRequest.getStartDate());
         timeOffRequestDto.setEndDate(timeOffRequest.getEndDate());
-        timeOffRequestDto.setDateTime(timeOffRequest.getDateTime() != null ? timeOffRequest.getDateTime().getId() : null);
+        timeOffRequestDto.setRequestType(timeOffRequest.getRequestType() != null ? timeOffRequest.getRequestType().getId() : null);
         timeOffRequestDto.setTimeOffDayAmount(timeOffRequest.getTimeOffDayAmount());
         timeOffRequestDto.setTimeOffStatusId(timeOffRequest.getTimeOffStatus() != null ? timeOffRequest.getTimeOffStatus().getId() : null);
         timeOffRequestDto.setVersion(timeOffRequest.getVersion());

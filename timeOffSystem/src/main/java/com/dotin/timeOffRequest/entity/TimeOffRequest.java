@@ -26,8 +26,8 @@ public class TimeOffRequest {
     @JoinColumn(name = "c_timeOffStatus")
     private CategoryElement timeOffStatus;
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElement.class, optional = false)
-    @JoinColumn(name = "c_dateTime")
-    private CategoryElement dateTime;
+    @JoinColumn(name = "requestType")
+    private CategoryElement requestType;
     @Column(name = "c_disabled")
     private Boolean disabled = false;
     @Column(name = "c_active")
@@ -92,12 +92,12 @@ public class TimeOffRequest {
         this.timeOffStatus = timeOffStatus;
     }
 
-    public CategoryElement getDateTime() {
-        return dateTime;
+    public CategoryElement getRequestType() {
+        return requestType;
     }
 
-    public void setDateTime(CategoryElement dateTime) {
-        this.dateTime = dateTime;
+    public void setRequestType(CategoryElement requestType) {
+        this.requestType = requestType;
     }
 
     public Boolean getDisabled() {

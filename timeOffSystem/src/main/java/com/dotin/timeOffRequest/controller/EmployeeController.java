@@ -1,6 +1,7 @@
 package com.dotin.timeOffRequest.controller;
 
 import com.dotin.timeOffRequest.dto.EmployeeDto;
+import com.dotin.timeOffRequest.exception.BadRequestException;
 import com.dotin.timeOffRequest.service.EmployeeService;
 import org.apache.log4j.Logger;
 
@@ -56,10 +57,21 @@ public class EmployeeController extends HttpServlet {
         log.info("request with below id has received : " + request.getParameter("id"));
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
         String action = request.getParameter("action");
         if (action.equals("del")) {
-            employeeService.delete(Long.valueOf(request.getParameter("id")));
-            response.sendRedirect("/jsp/employeeTable.jsp");
+            try {
+                employeeService.delete(Long.valueOf(request.getParameter("id")));
+            } catch (BadRequestException e) {
+                response.setStatus(400);
+                e.printStackTrace();
+                out.write("<p><span>" + e.getErrorMessage() + "</span><br/><a href='/jsp/managerSubset.jsp?id=" + Long.valueOf(request.getParameter("id")) + "'>" +
+                        "ویرایش" +
+                        "</a></p>");
+                out.close();
+            }
+            /*response.sendRedirect("/jsp/employeeTable.jsp");*/
         }
         if (action.equals("disable")) {
             EmployeeDto employeeDto = employeeService.findById(Long.valueOf(request.getParameter("id")));

@@ -39,20 +39,18 @@ public class TimeOffRequestController extends HttpServlet {
         if (request.getParameter("startDate") != null)
             timeOffRequestDto.setStartDate(request.getParameter("startDate"));
         timeOffRequestDto.setEndDate(request.getParameter("endDate"));
-        if (request.getParameter("date") != null) {
-            timeOffRequestDto.setStartDate(request.getParameter("date"));
-            timeOffRequestDto.setEndDate(request.getParameter("date"));
-        }
-        timeOffRequestDto.setStartTime(request.getParameter("startTime"));
-        timeOffRequestDto.setEndTime(request.getParameter("endTime"));
-        if (request.getParameter("dayAmount") != null) {
+        if (request.getParameter("startTime") != null && !request.getParameter("startTime").isEmpty())
+            timeOffRequestDto.setStartTime(request.getParameter("startTime"));
+        if (request.getParameter("endTime") != null && !request.getParameter("endTime").isEmpty())
+            timeOffRequestDto.setEndTime(request.getParameter("endTime"));
+        if (request.getParameter("dayAmount") != null && !request.getParameter("dayAmount").isEmpty()) {
             timeOffRequestDto.setTimeOffDayAmount(Integer.valueOf(request.getParameter("dayAmount")));
         }
         if (request.getParameter("employee") != null) {
             timeOffRequestDto.setEmployeeId(Long.valueOf(request.getParameter("employee")));
         }
         if (request.getParameter("dateTime") != null) {
-            timeOffRequestDto.setDateTime(Long.valueOf(request.getParameter("dateTime")));
+            timeOffRequestDto.setRequestType(Long.valueOf(request.getParameter("dateTime")));
         }
         try {
             timeOffRequestService.preAdd(timeOffRequestDto);

@@ -2,7 +2,7 @@ package com.dotin.timeOffRequest.dto;
 
 public class EmployeeDto {
     private Long id;
-    private double timeOffBalance = 240;
+    private double timeOffBalance;
     private String firstName;
     private String lastName;
     private String nationalCode;

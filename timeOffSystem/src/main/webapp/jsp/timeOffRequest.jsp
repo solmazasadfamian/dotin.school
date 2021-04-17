@@ -110,7 +110,7 @@
         <td><%=timeOffRequest.getEndDate()%>
         <td><%=timeOffRequest.getTimeOffDayAmount()%>
         <%
-            if (timeOffRequest.getStartTime()!= null){
+            if (timeOffRequest.getStartTime()!= null && !timeOffRequest.getStartTime().isEmpty()){
         %>
         <td><%=timeOffRequest.getStartTime()%>
         <%
@@ -121,7 +121,7 @@
             }
         %>
         <%
-            if (timeOffRequest.getEndTime()!=null){
+            if (timeOffRequest.getEndTime()!=null && !timeOffRequest.getEndTime().isEmpty()){
         %>
         <td><%=timeOffRequest.getEndTime()%>
         <%

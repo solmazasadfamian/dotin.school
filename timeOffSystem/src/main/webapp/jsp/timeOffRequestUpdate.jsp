@@ -32,7 +32,7 @@
     <input type="hidden" id="employee" name="employee" value="<%=request.getParameter("employee")%>"/>
     <input type="hidden" id="id"  name="id" value="<%=request.getParameter("id")%>"/>
     <%
-        Long dateTimeId = timeOffRequestService.findById(Long.valueOf(request.getParameter("id"))).getDateTime();
+        Long dateTimeId = timeOffRequestService.findById(Long.valueOf(request.getParameter("id"))).getRequestType();
         if (dateTimeId == 5){
     %>
     <input type="hidden" id="dateTime" name="dateTime" value="5"/>

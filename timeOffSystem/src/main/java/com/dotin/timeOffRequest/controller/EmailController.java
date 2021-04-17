@@ -68,7 +68,7 @@ public class EmailController extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
         if (action.equals("del")) {
-            employeeService.delete(Long.valueOf(request.getParameter("id")));
+            emailService.delete(Long.valueOf(request.getParameter("id")));
             response.sendRedirect("/jsp/employeeTable.jsp");
         }
     }

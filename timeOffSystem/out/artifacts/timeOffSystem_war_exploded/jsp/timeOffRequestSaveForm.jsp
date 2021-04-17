@@ -16,11 +16,12 @@
     <%@include file="header.jsp" %>
 </header>
 <%
-    if (request.getParameter("dateTime").equals("date")){
+    String requestType = request.getParameter("dateTime");
+    if (requestType.equals("date")){
 %>
 <input type="hidden" id="dateTime" name="dateTime" value="5"/>
 <%
-    }else if (request.getParameter("dateTime").equals("time")){
+    }else if (requestType.equals("time")){
 %>
 <input type="hidden" id="dateTime" name="dateTime" value="6"/>
 <%
@@ -35,10 +36,6 @@
             </div>
         </div>
     </div>
-    <%
-        String dateTime = request.getParameter("dateTime");
-        if ("date".equals(dateTime)){
-    %>
     <div class="row">
         <div class="col-25">
             <span style="color: red">*</span>
@@ -63,30 +60,36 @@
             <label for="dayAmount">تعداد روز</label>
         </div>
         <div class="col-75">
+            <%
+                if ("date".equals(requestType)){
+            %>
             <input type="number" id="dayAmount" name="dayAmount" placeholder="تعداد روز...">
+            <%
+                }else if ("time".equals(requestType)){
+            %>
+            <input type="number" disabled id="dayAmount" name="dayAmount" placeholder="تعداد روز...">
+            <%
+                }
+            %>
         </div>
     </div>
-    <%
-        }else if ("time".equals(dateTime)){
-    %>
-
-    <div class="row">
-        <div class="col-25">
-            <span style="color: red">*</span>
-            <label for="date">تاریخ</label>
-        </div>
-        <div class="col-75">
-            <input type="text" id="date" name="date" class="from-date" placeholder="yyyy/mm/dd">
-        </div>
-    </div>
-
     <div class="row">
         <div class="col-25">
             <span style="color: red">*</span>
             <label for="startTime">ساعت شروع</label>
         </div>
         <div class="col-75">
+            <%
+                if ("time".equals(requestType)){
+            %>
             <input type="text" id="startTime" name="startTime" class="startTime">
+            <%
+                }else if ("date".equals(requestType)){
+            %>
+            <input type="text" disabled id="startTime" name="startTime" class="startTime">
+            <%
+                }
+            %>
         </div>
     </div>
 
@@ -96,12 +99,20 @@
             <label for="endTime">ساعت پایان</label>
         </div>
         <div class="col-75">
+            <%
+                if ("time".equals(requestType)){
+            %>
             <input type="text" id="endTime" name="endTime" class="endTime">
+            <%
+                }else if ("date".equals(requestType)){
+            %>
+            <input type="text" disabled id="endTime" name="endTime" class="endTime">
+            <%
+                }
+            %>
         </div>
     </div>
-    <%
-        }
-    %>
+
     <div class="row" style="float: left">
         <input id="save" type="submit" value="ذخیره">
     </div>
@@ -150,7 +161,6 @@
             interval: 30,
             minTime: '7',
             maxTime: '18:00',
-            defaultTime: '11',
             startTime: '7:00',
             dynamic: false,
             dropdown: true,
@@ -162,7 +172,6 @@
             interval: 30,
             minTime: '7',
             maxTime: '6:00pm',
-            defaultTime: '11',
             startTime: '7:00',
             dynamic: false,
             dropdown: true,
@@ -193,7 +202,7 @@
     }
     function validateTime(){
         var result = true;
-        if($("#date").val() == null || $("#date").val()=="") {
+        if($("#startDate").val() == null || $("#startDate").val()=="") {
             alert("تاریخ شروع باید پر شود");
             result = false;
         }
@@ -221,10 +230,9 @@
             type: 'POST',
             data: {
                 startDate: $("#startDate").val(),
-                endDate: $("#endDate").val(),
+                endDate: $("#dateTime").val() == 5 ? $("#endDate").val() : $("#startDate").val(),
                 startTime: $("#startTime").val(),
                 endTime: $("#endTime").val(),
-                date: $("#date").val(),
                 dayAmount: $("#dayAmount").val(),
                 dateTime: $("#dateTime").val(),
                 employee: $("#employee").val()
