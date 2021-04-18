@@ -48,7 +48,9 @@ public class EmployeeService {
             Transaction transaction = session.beginTransaction();
             Employee employee = employeeDao.getEntity(employeeDto.getId());
             employeeDto.setVersion(employee.getVersion());
-            employeeDto.setTimeOffBalance(employee.getTimeOffBalance());
+            if (employee.getTimeOffBalance()==employeeDto.getTimeOffBalance()) {
+                employeeDto.setTimeOffBalance(employee.getTimeOffBalance());
+            }
             employeeDao.update(employeeMapper.toEntity(employeeDto));
             transaction.commit();
         } finally {

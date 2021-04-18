@@ -24,7 +24,15 @@
     EmployeeDto employee = employeeServiceT.findById(Long.valueOf(request.getParameter("id")));
 %>
 <div class="container" style="width: 491.37px;">
-        <input id="id" type="hidden" name="id" value="<%=request.getParameter("id")%>"/>
+    <%
+        if (request.getParameter("managerSubset") != null){
+    %>
+    <input id="managerSubset" type="hidden" name="managerSubset" value="<%=request.getParameter("managerSubset")%>"/>
+    <%
+        }
+    %>
+
+    <input id="id" type="hidden" name="id" value="<%=request.getParameter("id")%>"/>
         <div class="row">
             <div class="col-25">
                 <label for="fname">نام</label>
@@ -159,7 +167,13 @@
                 manager: $("#manager").val()
             },
             success: function (data) {
-                window.location = "employeeTable.jsp";
+                console.log(data)
+                console.log($("#managerSubset").val())
+                if ($("#managerSubset").val()=="true"){
+                    window.location = "managerSubset.jsp?id=<%=request.getParameter("managerId")%>";
+                }else {
+                    window.location = "employeeTable.jsp";
+                }
             },
             error: function (error) {
                 $('#alert-info p').remove();

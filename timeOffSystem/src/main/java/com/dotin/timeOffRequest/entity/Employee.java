@@ -10,7 +10,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "c_timeOffBalance")
-    private double timeOffBalance = 240;
+    private double timeOffBalance;
     @Column(name = "c_firstName")
     private String firstName;
     @Column(name = "c_lastName")
@@ -23,10 +23,10 @@ public class Employee {
     private String address;
     @Column(name = "c_emailAddress")
     private String emailAddress;
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElement.class, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = CategoryElement.class)
     @JoinColumn(name = "c_role")
     private CategoryElement role;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "c_manager")
     private Employee manager;
     @Column(name = "c_disabled")

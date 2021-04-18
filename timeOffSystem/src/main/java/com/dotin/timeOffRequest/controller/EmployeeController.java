@@ -46,10 +46,11 @@ public class EmployeeController extends HttpServlet {
 
         if (employeeDto.getId() == null) {
             employeeService.add(employeeDto);
+            response.sendRedirect("/jsp/employeeTable.jsp");
+
         } else {
             employeeService.update(employeeDto);
         }
-        response.sendRedirect("/jsp/employeeTable.jsp");
     }
 
     @Override
@@ -66,7 +67,7 @@ public class EmployeeController extends HttpServlet {
             } catch (BadRequestException e) {
                 response.setStatus(400);
                 e.printStackTrace();
-                out.write("<p><span>" + e.getErrorMessage() + "</span><br/><a href='/jsp/managerSubset.jsp?id=" + Long.valueOf(request.getParameter("id")) + "'>" +
+                out.write("<p><span>" + e.getErrorMessage() + "</span><br/><a style=\"color: #0a943a\" href='/jsp/managerSubset.jsp?id=" + Long.valueOf(request.getParameter("id")) + "'>" +
                         "ویرایش" +
                         "</a></p>");
                 out.close();

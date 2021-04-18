@@ -52,7 +52,7 @@
         <%
             }
         %>
-        <td><a href="/jsp/employeeUpdate.jsp?id=<%=employee.getId()%>">ویرایش</a>
+        <td><a href="/jsp/employeeUpdate.jsp?id=<%=employee.getId()%>&managerSubset=true&managerId=<%=request.getParameter("id")%>">ویرایش</a>
         <%
             }
     %>
