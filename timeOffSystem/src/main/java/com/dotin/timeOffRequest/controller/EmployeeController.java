@@ -49,6 +49,7 @@ public class EmployeeController extends HttpServlet {
             response.sendRedirect("/jsp/employeeTable.jsp");
 
         } else {
+            employeeDto.setTimeOffBalance(employeeService.findById(employeeDto.getId()).getTimeOffBalance());
             employeeService.update(employeeDto);
         }
     }
